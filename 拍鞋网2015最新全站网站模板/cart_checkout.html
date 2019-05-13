@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <title>购物车 - 订单结算</title> 
+  <meta charset="utf-8" /> 
+  <meta name="keywords" content="拍鞋网,拍鞋网官方网站,拍鞋网商城" /> 
+  <meta name="description" content="买鞋子哪个网站好，当然首选拍鞋网!中国最早成立的正品鞋子购物网站,国内最大的品牌鞋子销售广场。所售鞋子100%厂家授权,全国包邮,货到付款,提供最完美的购物体验！" /> 
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> 
+  <link rel="bookmark" href="images/favicon.ico" type="image/x-icon" /> 
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> 
+  <meta content=" width = device-width , initial-scale = 1.0 , maximum-scale = 1.0 , user-scalable = no " id="viewport" name="viewport" /> 
+  <meta content="yes" name="apple-mobile-web-app-capable" /> 
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+  <meta content="telephone=no" name="format-detection" /> 
+ </head> 
+ <body> 
+  <!--改版后 com1-3.css可以去掉--> 
+  <link type="text/css" rel="stylesheet" href="css/com1-3.css?2015091516" /> 
+  <!--新改的--> 
+  <link type="text/css" rel="stylesheet" href="css/com1-4.css?2015091516" /> 
+  <link type="text/css" rel="stylesheet" href="css/download.css?2015091516" /> 
+  <link type="text/css" rel="stylesheet" href="css/public-adaptation1-1.css?2015091516" /> 
+  <script src="js/jquery.js?2015091516"></script> 
+  <script>var PX_HELP_DATA=['416148489@qq.com','i2jioq5184gbv9ts2qudnsgth4',['touch','order','trolly'],'2015/09/15 16:10:43',0,false]; var DOMIN = {MAIN:"http://m.paixie.net",HELP:"http://help.paixie.net",TUAN:"http://tuan.paixie.net",WAP:"http://wap.paixie.net",UNION:"http://union.weixiaodian.com",VIPSHOP:"http://go.paixie.net"};</script> 
+  <script>
+			var JAVASCRIPT_LIB = (('\v' !== 'v') ? 'zepto' : 'jquery');
+			JAVASCRIPT_LIB="jquery"; 
+            DOMIN.MAIN = 'http://m.paixie.net';
+			DOMIN.PAIXIE = 'http://www.paixie.net';
+            // uc浏览器添加书签功能   
+           window.onmessage = function(event){
+                if(event.data.message != ''){
+                    $('#otherPage').remove();
+                }else{
+                    $('#otherPage').show();
+                }
+            };
+        </script> 
+  <script src="js/com.js?2015091516"></script> 
+  <script src="js/px-verify.js?2015091516"></script> 
+  <script src="js/template.js?2015091516"></script> 
+  <!--红包分享，临时添加--> 
+  <!-- uc 浏览器添加书签 start ---> 
+  <iframe src="http://app.uc.cn/appstore/AppCenter/frame?uc_param_str=nieidnutssvebipfcp&amp;api_ver=2.0&amp;id=1904" width="100%" height="160" style="display:none" id="otherPage"></iframe> 
+  <!-- uc 浏览器添加书签 end   ----> 
+  <script>
+			/*if(!getCookie('tipdownapp')&&!getCookie('pxspread')){
+				if(navigator.userAgent.toLowerCase().indexOf('android')>=0){
+					document.writeln('<div class="appfoot dload" style="background:url(images/2-1.png?2014000) no-repeat center center; background-size:604px 69px;"><a title="关闭" class="close" ></a><a class="download" href="http://a.app.qq.com/o/simple.jsp?pkgname=net.paixie.mall&g_f=991653" target="_blank"></a></div>');
+				}else if(navigator.userAgent.toLowerCase().indexOf('iphone')>=0){
+					document.writeln('<div class="appfoot dload" style="background:url(images/2-1.png?2014000) no-repeat center center; background-size:604px 69px; "><a title="关闭" class="close" ></a><a class="download" href="http://a.app.qq.com/o/simple.jsp?pkgname=net.paixie.mall&g_f=991653" target="_blank"></a></div>');
+				}
+			}*/
+		</script> 
+  <div class="com-content"> 
+   <script>
+			function open_notice(id){
+            	setCookie('touch_notice_close',1);
+                var url = '/new/info/'+id+'.html';
+                window.location.href=url;
+			};
+			var touch_notice_close = getCookie('touch_notice_close');
+			if(touch_notice_close == '1' && typeof(document.getElementById('js-com-notification2')) != 'undefined' && document.getElementById('js-com-notification2') != null){
+				document.getElementById('js-com-notification2').style.display = 'none';
+			}
+		</script> 
+   <script>
+			$(document).ready(function(e) {
+				publicHeadFoot(); // 首页公共部分进行头尾部公用
+				$('.dload a.close').click(function(){
+					$(this).parent().remove();
+					setCookie('tipdownapp',1);
+				});
+			});
+		</script> 
+   <!--<div class="header">
+				<a href="http://m.paixie.net/" class="logo" title="拍鞋网"></a>
+				<div class="search"><a href="search.html">热卖裙子</a></div>
+				<a class="member" title="会员中心" href="http://m.paixie.net/member/"></a>
+			</div>	--> 
+   <div class="com-header-area" style="display:none"> 
+    <header> 
+     <!--正常--> 
+     <a href="http://m.paixie.net/" class="logo" title="拍鞋网"><img src="images/250X70.gif" width="100%" alt="拍鞋网" /></a> 
+     <ul> 
+      <li><a rel="nofollow" class="seek" href="search.html"></a></li> 
+      <li><a rel="nofollow" class="email" href="http://m.paixie.net/member/user_msg"></a></li> 
+      <li><a rel="nofollow" class="me" href="http://m.paixie.net/member/"></a></li> 
+      <li> <a rel="nofollow" class="buy" href="http://m.paixie.net/cart/"> <span class="number spec-num">1</span> </a> </li> 
+     </ul> 
+    </header> 
+    <div class="search"> 
+     <form action="http://m.paixie.net/s.php" method="post"> 
+      <span class="input"><input type="text" name="keyword" value="" /></span> 
+      <input class="magnifier" type="submit" value=" " /> 
+      <ul class="prompt"> 
+       <li><a href="http://m.paixie.net/p-__m017710651_1.html" style="color:" title="女士箱包">女士箱包</a></li> 
+       <li><a href="http://m.paixie.net/p-m0265s0281_de;1.html" style="color:" title="休闲裤">休闲裤</a></li> 
+       <li><a href="http://m.paixie.net/p-m0386_id;1.html" style="color:#000000" title="早秋童装">早秋童装</a></li> 
+       <li><a href="http://m.paixie.net/list/?keyword=&amp;price=&amp;size=&amp;style=&amp;brand=&amp;sex=&amp;special=&amp;asc=id&amp;main=4" style="color:#000000" title="新品童鞋">新品童鞋</a></li> 
+       <li><a href="http://m.paixie.net/list/?keyword=&amp;price=&amp;size=&amp;style=91&amp;brand=&amp;sex=&amp;special=&amp;asc=id&amp;main=2" style="color:#000000" title="男凉清仓">男凉清仓</a></li> 
+       <li><a href="http://m.paixie.net/p-m0003s0012_1.html" style="color:#000000" title="女凉清仓">女凉清仓</a></li> 
+       <li><a href="http://m.paixie.net/li-ning/" style="color:#000000" title="李宁">李宁</a></li> 
+       <li><a href="http://m.paixie.net/puma/" style="color:#000000" title="彪马">彪马</a></li> 
+       <li><a href="http://m.paixie.net/adidas/" style="color:" title="阿迪达斯">阿迪达斯</a></li> 
+       <li><a href="http://m.paixie.net/nike/" style="color:#ed1749" title="耐克">耐克</a></li> 
+       <li><a href="http://m.paixie.net/mizuno/" style="color:#000000" title="美津浓">美津浓</a></li> 
+       <li><a href="http://m.paixie.net/p-m0265s0274_id;1.html" style="color:#000000" title="牛仔裤男">牛仔裤男</a></li> 
+       <li><a href="http://m.paixie.net/p-m0332_id;1.html#yun" style="color:#000000" title="新款秋装">新款秋装</a></li> 
+       <li><a href="http://m.paixie.net/p-m0332s0349_id;1.html#yun" style="color:#000000" title="连衣裙秋">连衣裙秋</a></li> 
+       <li><a href="http://m.paixie.net/p-m0002_id;1.html" style="color:#000000" title="男鞋尚新">男鞋尚新</a></li> 
+       <li><a href="http://m.paixie.net/shoes/list/3_17______id-1.html" style="color:#000000" title="女单尚新">女单尚新</a></li> 
+       <li><a href="http://m.paixie.net/list/?keyword=&amp;price=&amp;size=&amp;style=22&amp;brand=&amp;sex=&amp;special=&amp;asc=id&amp;main=1" style="color:" title="运动休闲鞋">运动休闲鞋</a></li> 
+       <li><a href="http://m.paixie.net/list/?keyword=&amp;price=&amp;size=&amp;style=14&amp;brand=&amp;sex=&amp;special=&amp;asc=id&amp;main=1" style="color:" title="篮球鞋">篮球鞋</a></li> 
+       <li><a href="http://m.paixie.net/p-m0001s0028_id;1.html" style="color:" title="跑步鞋">跑步鞋</a></li> 
+       <li><a href="http://m.paixie.net/topic/8903.html?site=pc" style="color:" title="十破天京">十破天京</a></li> 
+      </ul> 
+     </form> 
+    </div> 
+   </div> 
+   <div class="clearboth"></div> 
+   <div class="com-content-area" id="js-com-content-area"> 
+    <div class="mask hidden"></div> 
+    <!--content--> 
+    <style type="text/css">
+.m_bg{background-image: url(images/base.png);background-size: 345px 350px;}
+.holdspace{ height:50px;}
+.com-title{ position:fixed; height:45px; left:0; z-index:3; top:0; width:100%; font-family:微软雅黑 !important;}
+.com-title .home_menu{display: inline-block;vertical-align: middle; right:2%; top:-4%; width:10%;}
+.com-title .home_menu span:after,
+.com-title .home_menu span:before,
+.com-title .home_menu span{display: inline-block;vertical-align: middle;width: 6px;height: 6px;border-radius: 3px;background: #ffffff;position: relative;}
+.com-title .home_menu span:after{content: ' ';position: absolute;right:-10px;top:0;}
+.com-title .home_menu span:before{content: ' ';position: absolute;left:-10px;top:0;}
+.rotate45{-webkit-transform:rotate(45deg) scale(1.00,1.00) translate(0px,0px) skew(0deg,0deg);transform:rotate(45deg) scale(1.00,1.00) translate(0px,0px) skew(0deg,0deg);}
+.m_menu{z-index: 20;position: fixed;top:45px;right:5px;margin-left: -320px;}
+.m_menu>div{margin-left:340px;width: 160px;background: #292c33;border-radius: 6px;}
+.m_menu>div>i{width: 26px;height: 26px;position: absolute;right:15px;top:-12px;background: #292c33;}
+.m_menu>div>a{color: #949599;text-decoration: none;display: block;height: 50px;line-height: 50px;border-bottom:2px solid #1f2126;padding-left:65px;position: relative;}
+.m_menu>div>a:last-child{border-bottom:0;line-height: 50px;}
+.m_menu>div>a>span{position: absolute;top:0;left:24px;}
+.m_menu>div>a>span>i{width: 23px;height: 21px;display: inline-block;vertical-align: middle;}
+.m_menu>div>a:nth-child(2)>span>i{background-position: 0 -251px;}
+.m_menu>div>a:nth-child(3)>span>i{background-position: -25px -251px;}
+.m_menu>div>a:nth-child(4)>span>i{background-position: -52px -251px;}
+.m_menu>div>a:nth-child(5)>span>i{background-position: -78px -251px;}
+.spaceholder{ height:45px;}
+.hidden{ display:none;}
+.mask{ background: #FFF; opacity: 0.01;z-index: 19; width: 100%;height: 100%; position: absolute;top: 0;left: 0;}
+</style> 
+    <script type="text/javascript">
+$(document).ready(function() {
+    var $header = $('.com-title');
+    if($header.length){
+        $header.find('.home_menu').click(function(){
+               // var _menu = $('.m_menu')
+				//if(_menu.hasClass('hidden')){_menu.removeClass('hidden');}else{_menu.addClass('hidden');}
+				var _menu = $('.m_menu').removeClass('hidden');
+				var _mask = $('.mask').removeClass('hidden');
+                _menu.unbind('click').click(function(){
+                    _mask.click();
+                });
+                _mask.click(function(){
+                    _menu.addClass('hidden');
+                    _mask.addClass('hidden');
+                });
+            })
+    };
+});
+</script>
+    <div class="page-role cart-page cart-trolly-page" id="js-cart-trolly-page"> 
+     <link type="text/css" rel="stylesheet" href="css/checkout.css" /> 
+     <script src="js/consignee.js"></script> 
+     <!--<div class="page-title"><a href="/cart/index" class="return">返 回</a>购物结算</div>--> 
+     <div class="com-title"> 
+      <a title="返回" href="javascript:history.back();void(0)" class="return"></a> 
+      <a title="菜单" href="javascript:void(0);" class="home_menu"> <span></span> </a> 购物结算 
+     </div> 
+     <div class="m_menu hidden"> 
+      <div> 
+       <i class="rotate45"></i> 
+       <a href="index.html"><span><i class="m_bg"></i></span>首页</a> 
+       <a href="cat.html"><span><i class="m_bg"></i></span>分类搜索</a> 
+       <a href="cart.html"><span><i class="m_bg"></i></span>购物车</a> 
+       <a href="member_index.html"><span><i class="m_bg"></i></span>我的拍鞋</a> 
+      </div> 
+     </div> 
+     <div class="spaceholder"></div> 
+<!--     <div class="pxui-area" id="js-trolly-loading"> 
+      <img src="images/loading.gif" width="32" height="32" /> 正在加载请稍后... 
+     </div> -->
+     <form id="js-trolly-form" action="/order/order"> 
+      <div class="pxui-area" id="js-trolly" style="display:block"> 
+       <h1>选择收货地址</h1> 
+       <div class="address"> 
+        <a id="js-other-use-address-2" style="display:none">您还未添加任何地址，请先添加地址！</a> 
+        <span> <input type="hidden" id="js-trolly-address-id" value="3182547" /> 
+         <!--<input type="hidden" id="js-trolly-address-zipcode" value="223200"/>--> <span id="js-trolly-address-name">黄金林</span>&nbsp;&nbsp;&nbsp;&nbsp; <span id="js-trolly-address-phone">18005151538</span><br /> <span id="js-trolly-address-province">江苏省</span> <span id="js-trolly-address-city">淮安市</span> <span id="js-trolly-address-area">楚州区</span> <span id="js-trolly-address-address">南阳路33号</span> <span id="js-trolly-address-zipcode">223200</span> <br /> </span> 
+        <a class="a" style="display:block;" id="js-other-use-address"><b>+</b> 使用其他收货地址</a> 
+       </div> 
+       <h1>选择支付方式</h1> 
+       <div class="paytype" id="js-paytype"> 
+        <!----> 
+        <a id="js-pay-4" value="4,">货到付款<i></i></a> 
+        <a id="js-pay-1" value="1,200">支付宝<i></i></a> 
+        <a value="1,201">财付通<i></i></a> 
+        <a value="1,208" abc="">中国建设银行<i></i></a> 
+        <a value="1,20011">兴业银行<i></i></a> 
+        <a value="1,209">邮储银行<i></i></a> 
+        <a value="1,217">翼支付<i></i></a> 
+        <!--				<a value="1,223">中国工商银行<i></i></a>--> 
+        <a value="1,224">和包支付<i></i></a> 
+        <a value="1,20010">招商银行<i></i></a> 
+        <!----> 
+       </div> 
+       <h1>订单信息</h1> 
+       <div class="goodlist" id="js-item-list"></div> 
+       <h1>优惠</h1> 
+       <div class="offer alloffer" id="js-all-offers"> 
+        <a class="a" id="js-use-pxgold-button">使用拍鞋币<i class="arrow-right"></i></a> 
+        <a class="a" id="js-use-card-button">使用优惠券<i class="arrow-right"></i></a> 
+       </div> 
+       <h1>订单留言</h1> 
+       <div class="message"> 
+        <textarea id="js-trolly-message" maxlength="100" placeholder="订单留言，最多支持100个字符！"></textarea> 
+       </div> 
+       <h1>结算明细</h1> 
+       <div class="total"> 
+        <ul> 
+         <li>商品数量：<b class="pxui-color-red" id="js-goodnums-text">0</b></li> 
+         <li>商品金额：<b class="pxui-color-red" id="js-goodtotal-text">￥400.00</b></li> 
+         <li>邮<i style="padding: 0 0 0 2em;"></i>费：<b class="pxui-color-red" id="js-shipcost-text">-</b></li> 
+         <li id="js-pxgold-show-box">拍鞋币：<b class="pxui-color-red" id="js-use-pxgold">-￥400.00</b></li> 
+        </ul> 
+        <p style="text-align: right;"> 可获得<b id="js-get-pxgold"></b>个拍鞋币 </p> 
+        <p> <b>应付总额：<strong class="pxui-color-red" id="js-total-text"></strong></b> </p> 
+       </div> 
+       <div class="total"> 
+        <input type="submit" id="js-submit-order" class="pxui-light-button" value="提交订单" /> 
+       </div> 
+      </div> 
+     </form> 
+    </div> 
+    <script>
+	$(document).ready(function() {
+		if (typeof (WebViewJavascriptBridge) === "object") {//异度支付
+			$('#js-pay-215').addClass('selected').siblings().remove();
+		} else {
+			$('#js-pay-215').remove();
+		}
+	});
+</script> 
+    <script>
+	/*如果已经登录者设置为true*/
+	window['VerifyPhone'] = true;
+	window['VerifyCode'] = '';
+//var Business = {"self":{"businessid":"self","items":{"5453655580":{"itemid":"545365","sizeid":"558","num":"1"},"4682135560":{"itemid":"468213","sizeid":"556","num":"1"},"5428575570":{"itemid":"542857","sizeid":"557","num":"1"}}}};
+	var Business = {"31101":{"items":{"11155895640":{"itemid":"1115589","num":"1","sizeid":"564"}}}} ;
+	var ProvinceList = [{"Value":"\u5317\u4eac","Name":"\u5317\u4eac"},{"Value":"\u5b89\u5fbd\u7701","Name":"\u5b89\u5fbd\u7701"},{"Value":"\u798f\u5efa\u7701","Name":"\u798f\u5efa\u7701"},{"Value":"\u7518\u8083\u7701","Name":"\u7518\u8083\u7701"},{"Value":"\u5e7f\u4e1c\u7701","Name":"\u5e7f\u4e1c\u7701"},{"Value":"\u5e7f\u897f\u58ee\u65cf\u81ea\u6cbb\u533a","Name":"\u5e7f\u897f\u58ee\u65cf\u81ea\u6cbb\u533a"},{"Value":"\u8d35\u5dde\u7701","Name":"\u8d35\u5dde\u7701"},{"Value":"\u6d77\u5357\u7701","Name":"\u6d77\u5357\u7701"},{"Value":"\u6cb3\u5317\u7701","Name":"\u6cb3\u5317\u7701"},{"Value":"\u6cb3\u5357\u7701","Name":"\u6cb3\u5357\u7701"},{"Value":"\u9ed1\u9f99\u6c5f\u7701","Name":"\u9ed1\u9f99\u6c5f\u7701"},{"Value":"\u6e56\u5317\u7701","Name":"\u6e56\u5317\u7701"},{"Value":"\u6e56\u5357\u7701","Name":"\u6e56\u5357\u7701"},{"Value":"\u5409\u6797\u7701","Name":"\u5409\u6797\u7701"},{"Value":"\u6c5f\u82cf\u7701","Name":"\u6c5f\u82cf\u7701"},{"Value":"\u6c5f\u897f\u7701","Name":"\u6c5f\u897f\u7701"},{"Value":"\u8fbd\u5b81\u7701","Name":"\u8fbd\u5b81\u7701"},{"Value":"\u5185\u8499\u53e4\u81ea\u6cbb\u533a","Name":"\u5185\u8499\u53e4\u81ea\u6cbb\u533a"},{"Value":"\u5b81\u590f\u56de\u65cf\u81ea\u6cbb\u533a","Name":"\u5b81\u590f\u56de\u65cf\u81ea\u6cbb\u533a"},{"Value":"\u9752\u6d77\u7701","Name":"\u9752\u6d77\u7701"},{"Value":"\u5c71\u4e1c\u7701","Name":"\u5c71\u4e1c\u7701"},{"Value":"\u5c71\u897f\u7701","Name":"\u5c71\u897f\u7701"},{"Value":"\u9655\u897f\u7701","Name":"\u9655\u897f\u7701"},{"Value":"\u4e0a\u6d77","Name":"\u4e0a\u6d77"},{"Value":"\u56db\u5ddd\u7701","Name":"\u56db\u5ddd\u7701"},{"Value":"\u5929\u6d25","Name":"\u5929\u6d25"},{"Value":"\u897f\u85cf\u81ea\u6cbb\u533a","Name":"\u897f\u85cf\u81ea\u6cbb\u533a"},{"Value":"\u65b0\u7586\u7ef4\u543e\u5c14\u81ea\u6cbb\u533a","Name":"\u65b0\u7586\u7ef4\u543e\u5c14\u81ea\u6cbb\u533a"},{"Value":"\u4e91\u5357\u7701","Name":"\u4e91\u5357\u7701"},{"Value":"\u6d59\u6c5f\u7701","Name":"\u6d59\u6c5f\u7701"},{"Value":"\u91cd\u5e86","Name":"\u91cd\u5e86"},{"Value":"\u53f0\u6e7e\u7701","Name":"\u53f0\u6e7e\u7701"},{"Value":"\u9999\u6e2f\u7279\u522b\u884c\u653f\u533a","Name":"\u9999\u6e2f\u7279\u522b\u884c\u653f\u533a"},{"Value":"\u6fb3\u95e8\u7279\u522b\u884c\u653f\u533a","Name":"\u6fb3\u95e8\u7279\u522b\u884c\u653f\u533a"}];</script> 
+    <script type="text/tcl" id="js-business-template">
+    <%var Business = data.business;%>
+    <%for(var business in Business){%>
+    <%business = Business[business];%>
+    <h2><%=business.name;%></h2>
+    <ul>
+    <%for(var item in business.items){%>
+    <%
+    var itemid = item;
+    item = business.items[item];
+    %>
+    <li>
+    <a goodid="item<%=itemid;%>" href="<%=item.url;%>"  class="img80" src="<%=item.img;%>"><dfn></dfn></a>
+    <div>
+    <p>
+    <a class="name" href="<%=item.url;%>"><%=item.name;%></a>
+    拍鞋价：<strong class="pxui-color-red">￥<%=data.toFixed(item.price);%></strong><br/>
+    <span>颜色：<%=item.color;%>&nbsp;&nbsp;尺码：<%=item.size;%>，数量：
+    <span class="pxui-select">
+    <span><%=item.num;%></span>
+    <i></i>
+    <select business-id="<%=business.businessid;%>" item-id="<%=itemid;%>">
+    <%for(var _i=1;_i<=item.stock&&_i<=20;_i++){%>
+    <option <%if(item.num==_i){%>selected<%}%> value="<%=_i;%>"><%=_i;%></option>
+    <%}%>
+    </select>
+    </span>
+    </p>
+    </div>
+    </li>
+    <%}%>
+    <%for(var item in business.giftsList){%>
+    <%
+    var itemid = item;
+    business.giftsList[item].giftid = item;
+    item = business.giftsList[item];
+    %>
+    <li <%if(!business.gifts[item.giftid]){%>style="background:#efefef;"<%}%>>
+    <a goodid="item<%=itemid;%>" class="img80" src="<%=item.img;%>" href="<%=item.url;%>"><dfn></dfn></a>
+    <div>
+    <p>
+    <a class="name" href="<%=item.url;%>"><span><%if(item.price!="0"){%>换购<%}else{%>赠品<%}%></span><%=item.name;%></a>
+    拍鞋价：<strong class="pxui-color-red">￥<%=data.toFixed(item.price);%></strong><br/>
+    <%if(business.gifts[item.giftid]){%>
+    <%if(!business.gifts[item.giftid].sizeid){%>
+    <span>尺码：均码</span>
+    <%}else{%>
+    <span>尺码：<%for(var size in item.sizes){%><%size = item.sizes[size];%><%if(size.sizeid==business.gifts[item.giftid].sizeid){%><%=size.size;%><%break;%><%}%><%}%>
+    </span>
+    <%if(item.sizes.length>1){%>
+    <a business-id="<%=business.businessid;%>" class="js-grft-select a" gift-id="<%=item.giftid;%>">重新选择</a>
+    <%}%>
+    <%}%>
+    <a business-id="<%=business.businessid;%>" class="js-gift-del a" gift-id="<%=item.giftid;%>">不要<%if(item.price>0){%>换购<%}else{%>赠品<%}%></a>
+    <%}else{%>
+    <%if(item.price!="0"){%>
+    <a business-id="<%=business.businessid;%>" gift-id="<%=item.giftid;%>" class="select pxui-bg-red js-grft-select">选择换购</a>
+    <%}else{%>
+    <%switch (item.sizes.length){case 0:%><a business-id="<%=business.businessid;%>" gift-id="<%=item.giftid;%>" class="select pxui-bg-red js-grft-select">添加赠品</a><%break;%>
+    <%case 1:%><a business-id="<%=business.businessid;%>" gift-id="<%=item.giftid;%>" class="select pxui-bg-red js-grft-select">添加赠品</a><%break;%>
+    <%default:%><a business-id="<%=business.businessid;%>" gift-id="<%=item.giftid;%>" class="select pxui-bg-red js-grft-select">选择尺码</a><%break;%>
+    <%}%>
+    <%}%>
+    <%}%>
+    </p>
+    </div>
+    </li>
+    <%}%>
+    </ul>
+    <div class="offer">
+    <%for(var brand in business.offersList){%>
+    <%brand =business.offersList[brand];%>
+    <p>
+    <%=brand.brand;%>：
+    <span class="pxui-select ">
+    <span><%=brand.offers[business.offers[brand.brandid].offerid].offertitle;%></span>
+    <i></i>
+    <select class="offer" business-id="<%=business.businessid;%>" brand-id="<%=brand.brandid;%>" id="js-offer-business-<%=business.businessid;%>-brand-<%=brand.brandid;%>">
+    <%for(var offer in brand.offers){%>
+    <%offer =brand.offers[offer];%>
+    <option <%if(business.offers[brand.brandid].offerid==offer.offerid){%>selected<%}%> value="<%=offer.offerid;%>">
+    <%=offer.offertitle;%>
+    </option>
+    <%}%>
+    </select>
+    </span>
+    <b><%if(business.offers[brand.brandid].price){%>-<%}%><%=data.toFixed(business.offers[brand.brandid].price);%></b>
+    </p>
+    <%}%>
+    <p>
+    快递：
+    <%var name = '',index=0;for(var express in business.expressList){index++;name=business.expressList[express].express;}%>
+    <%if(index<=1){%>
+    <span><%=name;%></span>
+    <%}else{%>
+    <span class="pxui-select">
+    <span><%=business.expressList[business.express].express;%></span>
+    <i></i>
+    <select class="express" id="js-express-business-<%=business.businessid;%>" business-id="<%=business.businessid;%>">
+    <%for(var express in business.expressList){%>
+    <%express =business.expressList[express];%>
+    <option <%if(express.expressid==business.express){%>selected<%}%> value="<%=express.expressid;%>"><%=express.express;%></option>
+    <%}%>
+    </select>
+    </span>
+    <%}%>
+    <b><%=data.toFixed(business.expressList[business.express].price);%></b>
+    </p>
+    <%if(business.CashDelivery){%>
+    <p>
+    货到付款：
+    <span><%=business.CashDelivery.name;%></span>
+    <b><%=data.toFixed(business.CashDelivery.price);%></b>
+    </p>
+    <%}%>
+    <p>
+    店铺合计：<strong class="pxui-color-red">￥<%=data.toFixed(business.total);%></strong>
+    </p>
+    </div>
+    <%}%>
+</script> 
+    <!--content-end--> 
+   </div> 
+   <div class="com-footer-area" id="js-com-footer-area"> 
+    <span class="top"></span> 
+    <div class="footer"> 
+     <div class="nav"> 
+      <a class="ellipsis" rel="nofollow" href="http://m.paixie.net/member/" title="个人中心"><span>416148489</span></a> | 
+      <a rel="nofollow" href="http://m.paixie.netlogin.html?act=logout" title="退出">退出</a> | 
+      <a rel="nofollow" href="http://m.paixie.netfeed.html" title="用户反馈">用户反馈</a> | 
+      <a rel="nofollow" href="http://m.paixie.net/help/app.html" title="客户端">客户端</a> 
+     </div> 
+     <div class="copy">
+      &copy;2007-2015 
+      <a href="http://m.paixie.net/" style="color:#9ea4b1;">Paixie</a> All Rights Reserved 
+      <br />闽B2-20110084
+     </div> 
+    </div> 
+    <!--
+        <script>
+    if(navigator.userAgent.toLowerCase().indexOf('android')>=0){
+            document.writeln('<div class="appfootpic" style="background-color:#000; "><a href="http://www.paixie.net/?app=android" target="_blank"><img src="images/2-1.png" alt="" /></a></div>');
+    }else if(navigator.userAgent.toLowerCase().indexOf('iphone')>=0){
+            document.writeln('<div class="appfootpic" style="background-color:#000; "><a href="http://www.paixie.net/?app=iphone" target="_blank"><img src="images/2-1.png" alt="" /></a></div>');
+    }
+    </script>
+    --> 
+   </div> 
+  </div> 
+  <script type="text/tcl" id="js-good-template">
+    <a href="<%=data.link;%>">
+	<div class="pxui-box">
+    <div class="img160"><dfn></dfn><img src="images/empty.gif" goodsrc="<%=data.img;%>"/></div>
+    <span class="name"><%=data.name;%></span>
+    <span class="price"><em>￥</em><%=(data.price+'').split('.')[0];%></span>
+    <del class="price">￥<%=(data.oldprice+'').split('.')[0];%></del>
+    <%if(data.tag){%>
+    <img class="tag" src="images/empty.gif" truesrc="<%=data.tag;%>"/>
+    <%}%>
+	</div>
+    </a>
+</script> 
+  <script type="text/javascript">
+top.ztetbdata = null; 
+</script>  
+  <script src="js/trolly.js?12"></script>
+ </body>
+</html>

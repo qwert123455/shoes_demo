@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <title>会员中心 - 店铺首页</title> 
+  <meta charset="utf-8" /> 
+  <meta name="keywords" content="古戎鹿运动专营店-拍鞋网" /> 
+  <meta name="description" content="古戎鹿运动专营店-拍鞋网" /> 
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> 
+  <link rel="bookmark" href="images/favicon.ico" type="image/x-icon" /> 
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> 
+  <meta content=" width = device-width , initial-scale = 1.0 , maximum-scale = 1.0 , user-scalable = no " id="viewport" name="viewport" /> 
+  <meta content="yes" name="apple-mobile-web-app-capable" /> 
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+  <meta content="telephone=no" name="format-detection" /> 
+ </head> 
+ <body> 
+  <!--改版后 com1-3.css可以去掉--> 
+  <link type="text/css" rel="stylesheet" href="css/com1-3.css?2015091516" /> 
+  <!--新改的--> 
+  <link type="text/css" rel="stylesheet" href="css/com1-4.css?2015091516" /> 
+  <link type="text/css" rel="stylesheet" href="css/download.css?2015091516" /> 
+  <link type="text/css" rel="stylesheet" href="css/public-adaptation1-1.css?2015091516" /> 
+  <script src="js/jquery.js?2015091516"></script> 
+  <script>var PX_HELP_DATA=['416148489@qq.com','i2jioq5184gbv9ts2qudnsgth4',['mopen','mshop','index'],'2015/09/15 16:02:41',0,false]; var DOMIN = {MAIN:"",HELP:"http://help.paixie.net",TUAN:"http://tuan.paixie.net",WAP:"http://wap.paixie.net",UNION:"http://union.weixiaodian.com",VIPSHOP:"http://go.paixie.net"};</script> 
+  <script>
+			var JAVASCRIPT_LIB = (('\v' !== 'v') ? 'zepto' : 'jquery');
+			JAVASCRIPT_LIB="jquery"; 
+            DOMIN.MAIN = '';
+			DOMIN.PAIXIE = 'http://www.paixie.net';
+            // uc浏览器添加书签功能   
+           window.onmessage = function(event){
+                if(event.data.message != ''){
+                    $('#otherPage').remove();
+                }else{
+                    $('#otherPage').show();
+                }
+            };
+        </script> 
+  <script src="js/com.js?2015091516"></script> 
+  <script src="js/px-verify.js?2015091516"></script> 
+  <script src="js/template.js?2015091516"></script> 
+  <!--红包分享，临时添加--> 
+  <!-- uc 浏览器添加书签 start ---> 
+  <iframe src="http://app.uc.cn/appstore/AppCenter/frame?uc_param_str=nieidnutssvebipfcp&amp;api_ver=2.0&amp;id=1904" width="100%" height="160" style="display:none" id="otherPage"></iframe> 
+  <!-- uc 浏览器添加书签 end   ----> 
+  <script>
+			/*if(!getCookie('tipdownapp')&&!getCookie('pxspread')){
+				if(navigator.userAgent.toLowerCase().indexOf('android')>=0){
+					document.writeln('<div class="appfoot dload" style="background:url(images/2-1.png?2014000) no-repeat center center; background-size:604px 69px;"><a title="关闭" class="close" ></a><a class="download" href="http://a.app.qq.com/o/simple.jsp?pkgname=net.paixie.mall&g_f=991653" target="_blank"></a></div>');
+				}else if(navigator.userAgent.toLowerCase().indexOf('iphone')>=0){
+					document.writeln('<div class="appfoot dload" style="background:url(images/2-1.png?2014000) no-repeat center center; background-size:604px 69px; "><a title="关闭" class="close" ></a><a class="download" href="http://a.app.qq.com/o/simple.jsp?pkgname=net.paixie.mall&g_f=991653" target="_blank"></a></div>');
+				}
+			}*/
+		</script> 
+  <div class="com-content"> 
+   <script>
+			function open_notice(id){
+            	setCookie('touch_notice_close',1);
+                var url = '/new/info/'+id+'.html';
+                window.location.href=url;
+			};
+			var touch_notice_close = getCookie('touch_notice_close');
+			if(touch_notice_close == '1' && typeof(document.getElementById('js-com-notification2')) != 'undefined' && document.getElementById('js-com-notification2') != null){
+				document.getElementById('js-com-notification2').style.display = 'none';
+			}
+		</script> 
+   <script>
+			$(document).ready(function(e) {
+				publicHeadFoot(); // 首页公共部分进行头尾部公用
+				$('.dload a.close').click(function(){
+					$(this).parent().remove();
+					setCookie('tipdownapp',1);
+				});
+			});
+		</script> 
+   <div class="header"> 
+    <a href="http://m.paixie.net/" class="logo" title="拍鞋网"></a> 
+    <div class="search">
+     <a href="http://m.paixie.netsearch.html">热门搜索</a>
+    </div> 
+    <a class="member" title="会员中心" href="http://m.paixie.net/member/"></a> 
+   </div> 
+   <div class="com-header-area" style="display:none"> 
+    <header> 
+     <!--正常--> 
+     <a href="http://m.paixie.net/" class="logo" title="拍鞋网"><img src="images/250X70.gif" width="100%" alt="拍鞋网" /></a> 
+     <ul> 
+      <li><a rel="nofollow" class="seek" href="search.html"></a></li> 
+      <li><a rel="nofollow" class="email" href="http://m.paixie.net/member/user_msg"></a></li> 
+      <li><a rel="nofollow" class="me" href="http://m.paixie.net/member/"></a></li> 
+      <li> <a rel="nofollow" class="buy" href="http://m.paixie.net/cart/"> </a> </li> 
+     </ul> 
+    </header> 
+    <div class="search"> 
+     <form action="http://m.paixie.net/s.php" method="post"> 
+      <span class="input"><input type="text" name="keyword" value="" /></span> 
+      <input class="magnifier" type="submit" value=" " /> 
+      <ul class="prompt"> 
+      </ul> 
+     </form> 
+    </div> 
+   </div> 
+   <div class="clearboth"></div> 
+   <div class="com-content-area" id="js-com-content-area"> 
+    <!--content--> 
+    <div class="page-role"> 
+     <link type="text/css" rel="stylesheet" href="css/index.css?4" /> 
+     <script src="js/jquery.touchslider.min.js"></script> 
+     <script src="js/index.js"></script> 
+     <div class="page-title">
+      <a href="javascript:history.back();void(0)" class="return">返 回</a>古戎鹿运动专营店
+      <a class="styles"></a>
+     </div> 
+     <div class="style-box"> 
+      <h2>本店分类</h2> 
+      <ul> 
+       <li> <a href="/mshop/search"><i></i>所有商品</a> </li> 
+       <li> <a class="open" href="/mshop/search?cid=15311"><i></i>耐克NIKE</a> 
+        <ul class="open"> 
+         <li> <a class="open" href="/mshop/search?cid=15315">
+           <!--<i></i>-->跑步鞋</a> </li> 
+         <li> <a class="open" href="/mshop/search?cid=15317">
+           <!--<i></i>-->篮球鞋</a> </li> 
+         <li> <a class="open" href="/mshop/search?cid=15319">
+           <!--<i></i>-->板鞋/休闲鞋</a> </li> 
+         <li> <a class="open" href="/mshop/search?cid=15321">
+           <!--<i></i>-->男款</a> </li> 
+         <li> <a class="open" href="/mshop/search?cid=15323">
+           <!--<i></i>-->女款</a> </li> 
+        </ul> </li> 
+       <li> <a class="open" href="/mshop/search?cid=15313"><i></i>阿迪达斯ADIDAS</a> 
+        <ul class="open"> 
+         <li> <a class="open" href="/mshop/search?cid=15325">
+           <!--<i></i>-->跑步鞋</a> </li> 
+         <li> <a class="open" href="/mshop/search?cid=15327">
+           <!--<i></i>-->篮球鞋</a> </li> 
+         <li> <a class="open" href="/mshop/search?cid=15329">
+           <!--<i></i>-->板鞋/休闲鞋</a> </li> 
+         <li> <a class="open" href="/mshop/search?cid=15331">
+           <!--<i></i>-->男款</a> </li> 
+         <li> <a class="open" href="/mshop/search?cid=15333">
+           <!--<i></i>-->女款</a> </li> 
+         <li> <a class="open" href="/mshop/search?cid=15335">
+           <!--<i></i>-->训练鞋</a> </li> 
+        </ul> </li> 
+      </ul> 
+     </div> 
+     <div class="pxui-area"> 
+      <div class="msign"> 
+       <img class="bg" src="images/src_454332ecef.jpg" /> 
+       <span class="name">古戎鹿运动专营店</span> 
+       <p class="logo"><img src="images/src_4538978e52.jpg" /><span></span></p> 
+       <div class="infobox"> 
+        <p>店铺：<span class="scorebox"><span style="width:98%;"></span></span>4.9</p> 
+        <div class="info"> 
+         <i></i> 店铺信息 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="shop-info-box"> 
+      <i></i> 
+      <h2>店铺信息</h2> 
+      <p>卖家：古戎鹿运动专营店</p> 
+      <p>商品数量：140</p> 
+      <p>卖家印象分：<span class="scorebox"><span style="width:98%;"></span></span>4.9</p> 
+      <p>主营：运动户外</p> 
+      <p>pc端店铺地址：guronglu.paixie.net</p> 
+      <p>公司地址：江苏省 常州市 </p> 
+     </div> 
+     <div class="mtop10"> 
+      <!--自定义组件--> 
+      <!--轮播组件--> 
+      <div class="touchslider"> 
+       <div class="touchslider-viewport"> 
+        <div class="touchslider-item">
+         <a href="http://m.paixie.net/shoe-nike-654433-005-1083753.html"><img src="images/src_abbb888948.jpg" style="vertical-align:top;" /></a>
+        </div> 
+        <div class="touchslider-item">
+         <a href="http://m.paixie.net/shoe-nike-705461-400-1083829.html"><img src="images/src_abc28ae702.jpg" style="vertical-align:top;" /></a>
+        </div> 
+        <div class="touchslider-item">
+         <a href="http://m.paixie.net/shoe-adidas-S77241-1081073.html"><img src="images/src_abc536f453.jpg" style="vertical-align:top;" /></a>
+        </div> 
+       </div> 
+       <div class="touchslider-navtag"> 
+        <span class="touchslider-nav-item touchslider-nav-item-current"></span> 
+        <span class="touchslider-nav-item "></span> 
+        <span class="touchslider-nav-item "></span> 
+       </div> 
+      </div> 
+      <!--mMiniBanner组件--> 
+      <div class="mminbanner"> 
+       <a href="http://m.paixie.net/promote/coupon/get_coupon.html?id=6973&amp;vc=72567ff82e97b0fac9270232d4d70157" class="left"><span><img src="images/src_40631907ae.jpg" /></span></a> 
+       <a href="http://m.paixie.net/promote/coupon/get_coupon.html?id=7241&amp;vc=751ebdb23f35a1fca4e467d1284b15cc" class="right"><span><img src="images/src_410ef4a9fd.jpg" /></span></a> 
+      </div> 
+      <!--mMiniBanner组件--> 
+      <div class="mminbanner"> 
+       <a href="http://guronglu.m.paixie.net/mshop/search?key=%E8%80%90%E5%85%8B" class="left"><span><img src="images/src_abe55bf308.jpg" /></span></a> 
+       <a href="http://guronglu.m.paixie.net/mshop/search?key=%E9%98%BF%E8%BF%AA%E8%BE%BE%E6%96%AF" class="right"><span><img src="images/src_abe6db8f2e.jpg" /></span></a> 
+      </div> 
+     </div> 
+    </div> 
+    <!--content-end--> 
+   </div> 
+   <div class="com-footer-area" id="js-com-footer-area"> 
+    <span class="top"></span> 
+    <div class="footer"> 
+     <div class="nav"> 
+      <a class="ellipsis" rel="nofollow" href="http://m.paixie.net/member/" title="个人中心"><span>416148489</span></a> | 
+      <a rel="nofollow" href="http://m.paixie.netlogin.html?act=logout" title="退出">退出</a> | 
+      <a rel="nofollow" href="http://m.paixie.netfeed.html" title="用户反馈">用户反馈</a> | 
+      <a rel="nofollow" href="http://m.paixie.net/help/app.html" title="客户端">客户端</a> 
+     </div> 
+     <div class="copy">
+      &copy;2007-2015 
+      <a href="http://m.paixie.net/" style="color:#9ea4b1;">Paixie</a> All Rights Reserved 
+      <br />闽B2-20110084
+     </div> 
+    </div> 
+    <!--
+        <script>
+    if(navigator.userAgent.toLowerCase().indexOf('android')>=0){
+            document.writeln('<div class="appfootpic" style="background-color:#000; "><a href="http://www.paixie.net/?app=android" target="_blank"><img src="images/2-1.png" alt="" /></a></div>');
+    }else if(navigator.userAgent.toLowerCase().indexOf('iphone')>=0){
+            document.writeln('<div class="appfootpic" style="background-color:#000; "><a href="http://www.paixie.net/?app=iphone" target="_blank"><img src="images/2-1.png" alt="" /></a></div>');
+    }
+    </script>
+    --> 
+   </div> 
+  </div> 
+  <script type="text/tcl" id="js-good-template">
+    <a href="<%=data.link;%>">
+	<div class="pxui-box">
+    <div class="img160"><dfn></dfn><img src="images/empty.gif" goodsrc="<%=data.img;%>"/></div>
+    <span class="name"><%=data.name;%></span>
+    <span class="price"><em>￥</em><%=(data.price+'').split('.')[0];%></span>
+    <del class="price">￥<%=(data.oldprice+'').split('.')[0];%></del>
+    <%if(data.tag){%>
+    <img class="tag" src="images/empty.gif" truesrc="<%=data.tag;%>"/>
+    <%}%>
+	</div>
+    </a>
+</script> 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45921315-2', 'paixie.net');
+    ga('send', 'pageview');
+
+</script> 
+  <div style="display:none;"> 
+  </div>  
+  <script type="text/javascript">
+top.ztetbdata = null; 
+</script>  
+ </body>
+</html>

@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <title>商品分类</title> 
+  <meta charset="utf-8" /> 
+  <meta name="keywords" content="" /> 
+  <meta name="description" content="" /> 
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> 
+  <link rel="bookmark" href="images/favicon.ico" type="image/x-icon" /> 
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" /> 
+  <meta content=" width = device-width , initial-scale = 1.0 , maximum-scale = 1.0 , user-scalable = no " id="viewport" name="viewport" /> 
+  <meta content="yes" name="apple-mobile-web-app-capable" /> 
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" /> 
+  <meta content="telephone=no" name="format-detection" /> 
+ </head> 
+ <body> 
+  <!--改版后 com1-3.css可以去掉--> 
+  <link type="text/css" rel="stylesheet" href="css/com1-3.css?2015091515" /> 
+  <!--新改的--> 
+  <link type="text/css" rel="stylesheet" href="css/com1-4.css?2015091515" /> 
+  <link type="text/css" rel="stylesheet" href="css/download.css?2015091515" /> 
+  <link type="text/css" rel="stylesheet" href="css/public-adaptation1-1.css?2015091515" /> 
+  <script src="js/jquery.js?2015091515"></script> 
+  <script>var PX_HELP_DATA=['416148489@qq.com','i2jioq5184gbv9ts2qudnsgth4',['touch','category','index'],'2015/09/15 15:59:20',0,false]; var DOMIN = {MAIN:"http://m.paixie.net",HELP:"http://help.paixie.net",TUAN:"http://tuan.paixie.net",WAP:"http://wap.paixie.net",UNION:"http://union.weixiaodian.com",VIPSHOP:"http://go.paixie.net"};</script> 
+  <script>
+			var JAVASCRIPT_LIB = (('\v' !== 'v') ? 'zepto' : 'jquery');
+			JAVASCRIPT_LIB="jquery"; 
+            DOMIN.MAIN = 'http://m.paixie.net';
+			DOMIN.PAIXIE = 'http://www.paixie.net';
+            // uc浏览器添加书签功能   
+           window.onmessage = function(event){
+                if(event.data.message != ''){
+                    $('#otherPage').remove();
+                }else{
+                    $('#otherPage').show();
+                }
+            };
+        </script> 
+  <script src="js/com.js?2015091515"></script> 
+  <script src="js/px-verify.js?2015091515"></script> 
+  <script src="js/template.js?2015091515"></script> 
+  <!--红包分享，临时添加--> 
+  <!-- uc 浏览器添加书签 start ---> 
+  <iframe src="http://app.uc.cn/appstore/AppCenter/frame?uc_param_str=nieidnutssvebipfcp&amp;api_ver=2.0&amp;id=1904" width="100%" height="160" style="display:none" id="otherPage"></iframe> 
+  <!-- uc 浏览器添加书签 end   ----> 
+  <script>
+			/*if(!getCookie('tipdownapp')&&!getCookie('pxspread')){
+				if(navigator.userAgent.toLowerCase().indexOf('android')>=0){
+					document.writeln('<div class="appfoot dload" style="background:url(images/2-1.png?2014000) no-repeat center center; background-size:604px 69px;"><a title="关闭" class="close" ></a><a class="download" href="http://a.app.qq.com/o/simple.jsp?pkgname=net.paixie.mall&g_f=991653" target="_blank"></a></div>');
+				}else if(navigator.userAgent.toLowerCase().indexOf('iphone')>=0){
+					document.writeln('<div class="appfoot dload" style="background:url(images/2-1.png?2014000) no-repeat center center; background-size:604px 69px; "><a title="关闭" class="close" ></a><a class="download" href="http://a.app.qq.com/o/simple.jsp?pkgname=net.paixie.mall&g_f=991653" target="_blank"></a></div>');
+				}
+			}*/
+		</script> 
+  <div class="com-content"> 
+   <script>
+			function open_notice(id){
+            	setCookie('touch_notice_close',1);
+                var url = '/new/info/'+id+'.html';
+                window.location.href=url;
+			};
+			var touch_notice_close = getCookie('touch_notice_close');
+			if(touch_notice_close == '1' && typeof(document.getElementById('js-com-notification2')) != 'undefined' && document.getElementById('js-com-notification2') != null){
+				document.getElementById('js-com-notification2').style.display = 'none';
+			}
+		</script> 
+   <script>
+			$(document).ready(function(e) {
+				publicHeadFoot(); // 首页公共部分进行头尾部公用
+				$('.dload a.close').click(function(){
+					$(this).parent().remove();
+					setCookie('tipdownapp',1);
+				});
+			});
+		</script> 
+   <!--<div class="header">
+				<a href="http://m.paixie.net/" class="logo" title="拍鞋网"></a>
+				<div class="search"><a href="search.html">热卖裙子</a></div>
+				<a class="member" title="会员中心" href="http://m.paixie.net/member/"></a>
+			</div>	--> 
+   <div class="com-header-area" style="display:none"> 
+    <header> 
+     <!--正常--> 
+     <a href="http://m.paixie.net/" class="logo" title="拍鞋网"><img src="images/250X70.gif" width="100%" alt="拍鞋网" /></a> 
+     <ul> 
+      <li><a rel="nofollow" class="seek" href="search.html"></a></li> 
+      <li><a rel="nofollow" class="email" href="http://m.paixie.net/member/user_msg"></a></li> 
+      <li><a rel="nofollow" class="me" href="http://m.paixie.net/member/"></a></li> 
+      <li> <a rel="nofollow" class="buy" href="http://m.paixie.net/cart/"> <span class="number spec-num">3</span> </a> </li> 
+     </ul> 
+    </header> 
+    <div class="search"> 
+     <form action="http://m.paixie.net/s.php" method="post"> 
+      <span class="input"><input type="text" name="keyword" value="" /></span> 
+      <input class="magnifier" type="submit" value=" " /> 
+      <ul class="prompt"> 
+       <li><a href="http://m.paixie.net/p-__m017710651_1.html" style="color:" title="女士箱包">女士箱包</a></li> 
+       <li><a href="http://m.paixie.net/p-m0265s0281_de;1.html" style="color:" title="休闲裤">休闲裤</a></li> 
+       <li><a href="http://m.paixie.net/p-m0386_id;1.html" style="color:#000000" title="早秋童装">早秋童装</a></li> 
+       <li><a href="http://m.paixie.net/list/?keyword=&amp;price=&amp;size=&amp;style=&amp;brand=&amp;sex=&amp;special=&amp;asc=id&amp;main=4" style="color:#000000" title="新品童鞋">新品童鞋</a></li> 
+       <li><a href="http://m.paixie.net/list/?keyword=&amp;price=&amp;size=&amp;style=91&amp;brand=&amp;sex=&amp;special=&amp;asc=id&amp;main=2" style="color:#000000" title="男凉清仓">男凉清仓</a></li> 
+       <li><a href="http://m.paixie.net/p-m0003s0012_1.html" style="color:#000000" title="女凉清仓">女凉清仓</a></li> 
+       <li><a href="http://m.paixie.net/li-ning/" style="color:#000000" title="李宁">李宁</a></li> 
+       <li><a href="http://m.paixie.net/puma/" style="color:#000000" title="彪马">彪马</a></li> 
+       <li><a href="http://m.paixie.net/adidas/" style="color:" title="阿迪达斯">阿迪达斯</a></li> 
+       <li><a href="http://m.paixie.net/nike/" style="color:#ed1749" title="耐克">耐克</a></li> 
+       <li><a href="http://m.paixie.net/mizuno/" style="color:#000000" title="美津浓">美津浓</a></li> 
+       <li><a href="http://m.paixie.net/p-m0265s0274_id;1.html" style="color:#000000" title="牛仔裤男">牛仔裤男</a></li> 
+       <li><a href="http://m.paixie.net/p-m0332_id;1.html#yun" style="color:#000000" title="新款秋装">新款秋装</a></li> 
+       <li><a href="http://m.paixie.net/p-m0332s0349_id;1.html#yun" style="color:#000000" title="连衣裙秋">连衣裙秋</a></li> 
+       <li><a href="http://m.paixie.net/p-m0002_id;1.html" style="color:#000000" title="男鞋尚新">男鞋尚新</a></li> 
+       <li><a href="http://m.paixie.net/shoes/list/3_17______id-1.html" style="color:#000000" title="女单尚新">女单尚新</a></li> 
+       <li><a href="http://m.paixie.net/list/?keyword=&amp;price=&amp;size=&amp;style=22&amp;brand=&amp;sex=&amp;special=&amp;asc=id&amp;main=1" style="color:" title="运动休闲鞋">运动休闲鞋</a></li> 
+       <li><a href="http://m.paixie.net/list/?keyword=&amp;price=&amp;size=&amp;style=14&amp;brand=&amp;sex=&amp;special=&amp;asc=id&amp;main=1" style="color:" title="篮球鞋">篮球鞋</a></li> 
+       <li><a href="http://m.paixie.net/p-m0001s0028_id;1.html" style="color:" title="跑步鞋">跑步鞋</a></li> 
+       <li><a href="http://m.paixie.net/topic/8903.html?site=pc" style="color:" title="十破天京">十破天京</a></li> 
+      </ul> 
+     </form> 
+    </div> 
+   </div> 
+   <div class="clearboth"></div> 
+   <div class="com-content-area" id="js-com-content-area"> 
+    <div class="mask hidden"></div> 
+    <!--content--> 
+    <style type="text/css">
+.m_bg{background-image: url(images/base.png);background-size: 345px 350px;}
+.holdspace{ height:50px;}
+.com-title{ position:fixed; height:45px; left:0; z-index:3; top:0; width:100%; font-family:微软雅黑 !important;}
+.com-title .home_menu{display: inline-block;vertical-align: middle; right:2%; top:-4%; width:10%;}
+.com-title .home_menu span:after,
+.com-title .home_menu span:before,
+.com-title .home_menu span{display: inline-block;vertical-align: middle;width: 6px;height: 6px;border-radius: 3px;background: #ffffff;position: relative;}
+.com-title .home_menu span:after{content: ' ';position: absolute;right:-10px;top:0;}
+.com-title .home_menu span:before{content: ' ';position: absolute;left:-10px;top:0;}
+.rotate45{-webkit-transform:rotate(45deg) scale(1.00,1.00) translate(0px,0px) skew(0deg,0deg);transform:rotate(45deg) scale(1.00,1.00) translate(0px,0px) skew(0deg,0deg);}
+.m_menu{z-index: 20;position: fixed;top:45px;right:5px;margin-left: -320px;}
+.m_menu>div{margin-left:340px;width: 160px;background: #292c33;border-radius: 6px;}
+.m_menu>div>i{width: 26px;height: 26px;position: absolute;right:15px;top:-12px;background: #292c33;}
+.m_menu>div>a{color: #949599;text-decoration: none;display: block;height: 50px;line-height: 50px;border-bottom:2px solid #1f2126;padding-left:65px;position: relative;}
+.m_menu>div>a:last-child{border-bottom:0;line-height: 50px;}
+.m_menu>div>a>span{position: absolute;top:0;left:24px;}
+.m_menu>div>a>span>i{width: 23px;height: 21px;display: inline-block;vertical-align: middle;}
+.m_menu>div>a:nth-child(2)>span>i{background-position: 0 -251px;}
+.m_menu>div>a:nth-child(3)>span>i{background-position: -25px -251px;}
+.m_menu>div>a:nth-child(4)>span>i{background-position: -52px -251px;}
+.m_menu>div>a:nth-child(5)>span>i{background-position: -78px -251px;}
+.spaceholder{ height:45px;}
+.hidden{ display:none;}
+.mask{ background: #FFF; opacity: 0.01;z-index: 19; width: 100%;height: 100%; position: absolute;top: 0;left: 0;}
+</style> 
+    <script type="text/javascript">
+$(document).ready(function() {
+    var $header = $('.com-title');
+    if($header.length){
+        $header.find('.home_menu').click(function(){
+               // var _menu = $('.m_menu')
+				//if(_menu.hasClass('hidden')){_menu.removeClass('hidden');}else{_menu.addClass('hidden');}
+				var _menu = $('.m_menu').removeClass('hidden');
+				var _mask = $('.mask').removeClass('hidden');
+                _menu.unbind('click').click(function(){
+                    _mask.click();
+                });
+                _mask.click(function(){
+                    _menu.addClass('hidden');
+                    _mask.addClass('hidden');
+                });
+            })
+    };
+});
+</script>
+    <link rel="stylesheet" type="text/css" href="css/classify.1.1.css?4" /> 
+    <!--<div class="p-title">
+    <a href="javascript:history.back();void(0)" class="return">返 回</a>找商品
+	<a href="http://m.paixie.netsearch.html" class="search"></a>
+</div>--> 
+    <div class="com-title"> 
+     <a title="返回" href="javascript:history.back();void(0)" class="return"></a> 
+     <a title="菜单" href="javascript:void(0);" class="home_menu"> <span></span> </a> 找商品 
+    </div> 
+    <div class="m_menu hidden"> 
+     <div> 
+      <i class="rotate45"></i> 
+      <a href="index.html"><span><i class="m_bg"></i></span>首页</a> 
+      <a href="cat.html"><span><i class="m_bg"></i></span>分类搜索</a> 
+      <a href="cart.html"><span><i class="m_bg"></i></span>购物车</a> 
+      <a href="member_index.html"><span><i class="m_bg"></i></span>我的拍鞋</a> 
+     </div> 
+    </div> 
+    <div class="spaceholder"></div> 
+    <div class="p-area"> 
+     <div class="p-search-box" id="js-searchbox"> 
+      <form action="http://m.paixie.netsearch.html?act=submit" method="post"> 
+       <input name="keyword" class="p-search" id="js-search" type="search" value="" placeholder="搜索商品" /> 
+       <input class="p-submit" type="submit" value="搜索" /> 
+       <div class="clearboth"></div> 
+      </form> 
+     </div> 
+     <div class="p-tag"> 
+      <a href="cat.html" class="current">分类</a> 
+      <a href="brand.html">品牌</a> 
+     </div> 
+     <div class="p-content"> 
+      <div class="p-conleft"> 
+       <ul class="classify-title" id="js-classify-title"> 
+        <li style="color:#; " class="on">运动</li> 
+        <li style="color:#; ">女鞋</li> 
+        <li style="color:#; ">男鞋</li> 
+        <li style="color:#; ">女装</li> 
+        <li style="color:#; ">男装</li> 
+        <li style="color:#; ">户外</li> 
+        <li style="color:#; ">儿童</li> 
+        <li style="color:#; ">服饰配件</li> 
+        <li style="color:#; ">家居箱包</li> 
+       </ul> 
+      </div> 
+      <div class="p-conright"> 
+       <!--分类 --> 
+       <div class="js-con-0"> 
+        <!--				<div class="p-ad"><img src="images/qq.jpg"></div>--> 
+        <!--二级分类单元--> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">人气单品</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/shoe-nike-683632-010-1115589.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/nike/guronglu/201508/27/ed39821be0_thumb_160160.jpg" alt="" /> <span style="color:#; ">耐克529元</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoe-nike-683731-1083537.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/nike/guronglu/201507/22/f5cb175865_thumb_160160.jpg" alt="" /> <span style="color:#; ">耐克499元</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoe-xtep-988419111380-527261.html"> <img src="images/empty.gif" truesrc="http://img14.paixie.net/xtep/201212/04/paixienet-470646-20121204-160434-p_thumb_160160.jpg" alt="" /> <span style="color:#; ">特步119元</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#cf2d76; ">热搜榜</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/topic/9107.html?site=pc"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150915/1442296619bbfd17.jpg" alt="" /> <span style="color:#; ">915嘉年华</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/topic/8903.html?site=pc"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150915/144229651974e19b.jpg" alt="" /> <span style="color:#; ">十破天京低至29元</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/topic/9375.html?site=pc"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150915/144229643642b9ac.jpg" alt="" /> <span style="color:#; ">fun享运动12元起</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/topic/9379.html?site=pc"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150915/1442296573d72c0b.jpg" alt="" /> <span style="color:#; ">男神专场低至1折</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/temai/9163.html"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150827/1440641226a0da36.jpg" alt="" /> <span style="color:#; ">李宁清仓69—119元</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">潮流运动</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/p-m0001_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img14.paixie.net/adidas/201503/03/B40826_492_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">2015新品</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/list/______%E8%B7%91%E6%AD%A5%E9%9E%8B_sd-.html"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150420/142949852080447f.jpg" alt="" /> <span style="color:#; ">跑鞋爆款</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/list/?keyword=%E9%98%BF%E7%94%98%E9%9E%8B&amp;price=&amp;size=&amp;style=&amp;brand=148,45,148,3"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150420/1429498355349a13.jpg" alt="" /> <span style="color:#; ">阿甘系列</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-adidas_s0001_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img14.paixie.net/adidas/201412/02/C75547_488_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">阿迪爆款</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-nike_s0028_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img5.paishoes.com/nike/miaodong/201412/27/e381c8217b_thumb_160160.jpg" alt="" /> <span style="color:#; ">耐克爆款</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/list/______%E4%B8%87%E6%96%AF_sd-.html"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/vans/vans/201411/25/46a83b22bf_thumb_160160.jpg" alt="" /> <span style="color:#; ">Vans爆款</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/originals/#yun"> <img src="images/empty.gif" truesrc="http://img6.paixie.net/originals/201403/08/D65609_491_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">三叶草</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/forbid/p-_大嘴猴__1.html#yun"> <img src="images/empty.gif" truesrc="http://img5.paishoes.com/paulfrank/pualfrank01/201504/01/ba539144d9_thumb_160160.jpg" alt="" /> <span style="color:#; ">大嘴猴</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-puma_m0178_id;1.html"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/puma/yingte/201504/23/8aaf07359f_thumb_160160.jpg" alt="" /> <span style="color:#; ">彪马</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">运动鞋</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/p-_N%E5%AD%97%E9%9E%8B__1.html"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150420/1429498188cd313b.jpg" alt="" /> <span style="color:#d132d1; ">N字鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/temai/4647.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/14199108259eede4.png" alt="" /> <span style="color:#; ">板鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0001s0028_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/1419910794a6b7f5.png" alt="" /> <span style="color:#; ">跑步鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0001s0014_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/141991074375d625.png" alt="" /> <span style="color:#; ">篮球鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0001s0022_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/1419910682a4ca17.png" alt="" /> <span style="color:#; ">休闲鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0001s0064_1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/14199106422b557f.png" alt="" /> <span style="color:#; ">帆布鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0001s0055_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/1419910716c23f00.png" alt="" /> <span style="color:#; ">综合训练鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0001s0007_1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/141991062732aa85.png" alt="" /> <span style="color:#; ">足球鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0001s0029_1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/1419910604cc4164.png" alt="" /> <span style="color:#; ">网球鞋</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">运动服</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/p-m0184_1.html#yun"> <img src="images/empty.gif" truesrc="http://img12.paixie.net/361sport/201406/18/551424137_483_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">T恤清仓</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0178s0192_1.html"> <img src="images/empty.gif" truesrc="http://img14.paixie.net/xtep/201503/19/988228020101_474_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">运动POLO衫</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-__m0178s0191_1.html"> <img src="images/empty.gif" truesrc="http://img8.paixie.net/li-ning/201504/23/AATK003-3_489_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">运动套装</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0178s0186_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img8.paixie.net/li-ning/201504/23/AFDK029-3_489_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">运动风衣</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0178s0185_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/14199102455ec9ad.png" alt="" /> <span style="color:#; ">运动卫衣</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0178s0187_1.html#yun"> <img src="images/empty.gif" truesrc="http://img12.paixie.net/peak/201402/24/F241101_477_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">夹克</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-__m0178s0180_de;1.html#yun"> <img src="images/empty.gif" truesrc="http://img14.paixie.net/adidas/201504/15/S00560_488_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">健身衣</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_运动短裤_s0195_1.html#yun"> <img src="images/empty.gif" truesrc="http://img8.paixie.net/li-ning/201502/27/AKSK015-1_496_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">运动短裤</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_运动长裤_s0194_1.html#yun"> <img src="images/empty.gif" truesrc="http://img10.paixie.net/nike/201504/16/703642-010_496_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">运动长裤</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">运动配饰</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/p-m0217s0228_1.html#yun"> <img src="images/empty.gif" truesrc="http://img8.paixie.net/li-ning/201503/20/ABSK056-4_488_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">双肩背包</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0217s0219_1.html#yun"> <img src="images/empty.gif" truesrc="http://img8.paixie.net/li-ning/201408/08/ABDJ134-1_491_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">单肩背包</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0217s0224_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img12.paixie.net/361sport/201503/10/311411012_488_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">休闲包</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0217s0242_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img5.paishoes.com/li-ning/lining01/201504/08/48d3035b93_thumb_160160.jpg" alt="" /> <span style="color:#; ">运动水壶</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0217s0240_1.html#yun"> <img src="images/empty.gif" truesrc="http://img8.paixie.net/li-ning/201502/11/AMYK036-3_485_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">运动帽</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0435s0583_1.html#yun"> <img src="images/empty.gif" truesrc="http://img5.paishoes.com/langsubi/langbisu/201505/02/468fd6d3a7_thumb_160160.jpg" alt="" /> <span style="color:#; ">泳镜</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0435s0581_1.html#yun"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/sanqi/sq/201504/23/89668c2818_thumb_160160.jpg" alt="" /> <span style="color:#; ">泳帽</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0217s0237_1.html#yun"> <img src="images/empty.gif" truesrc="http://img14.paixie.net/adidas/201410/24/Z24343_496_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">运动袜子</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0217s0232_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/1419918292426b52.png" alt="" /> <span style="color:#; ">头巾|遮耳</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">品牌推荐</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/mizuno/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150825/14404637120bf8f8.jpg" alt="" /> <span style="color:#; ">美津浓</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/nike/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/141992357355789c.jpg" alt="" /> <span style="color:#; ">耐克</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/adidas/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/1419923597d73909.jpg" alt="" /> <span style="color:#; ">阿迪达斯</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/li-ning/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/141992364805694a.jpg" alt="" /> <span style="color:#; ">李宁</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/converse/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150512/1431395219302a12.jpg" alt="" /> <span style="color:#; ">匡威</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/erke/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150317/142657467865dfae.jpg" alt="" /> <span style="color:#; ">鸿星尔克</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/xtep/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/1419923914af3319.jpg" alt="" /> <span style="color:#; ">特步</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/361sport/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/1419923707b640e2.jpg" alt="" /> <span style="color:#; ">361&deg;</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/anta/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/141992373135a6de.jpg" alt="" /> <span style="color:#; ">安踏</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <!--二级分类单元- end --> 
+       </div> 
+       <div class="js-con-1" style="display:none;"> 
+        <!--二级分类单元--> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">人气单品</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/shoe-dadong-5Q2423-1092169.html"> <img src="images/empty.gif" truesrc="http://img4.paishoes.com/dadong/dadong/201508/03/ecd39c7829_thumb_160160.jpg" alt="" /> <span style="color:#; ">49元</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoe-meilijiaren-342355008-840337.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/meilijiaren/meilijiaren/201411/05/9d65494c2f_thumb_160160.jpg" alt="" /> <span style="color:#; ">49元</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoe-josiny-153165130-1095851.html"> <img src="images/empty.gif" truesrc="http://img13.paixie.net/josiny/201508/06/153165130_495_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">229元</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">人气推荐</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/p-m0003s0012_1.html"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150407/1428393341d1759d.jpg" alt="" /> <span style="color:#; ">凉鞋清仓</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0003s0017_de;1.html"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150304/1425455754aa8c17.jpg" alt="" /> <span style="color:#; ">秋季新品</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0003s0048_de;3.html"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150304/142545596913bf61.jpg" alt="" /> <span style="color:#; ">性感高跟</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0003s0137_id;1.html"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150304/14254562339bc55d.jpg" alt="" /> <span style="color:#; ">增高鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0003s0161_id;1.html#TJ=topleft"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150304/1425456290270019.jpg" alt="" /> <span style="color:#; ">帆布鞋</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">秋品推荐</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/shoes/list/3_17______id-1.html"> <img src="images/empty.gif" truesrc="http://img13.paixie.net/josiny/201501/29/151110120_484_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">新品女单</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoes/list/3_456______id-1.html"> <img src="images/empty.gif" truesrc="http://img9.paixie.net/mingdian/201509/02/D590233_492_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">马丁靴</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoes/list/3_48______id-1.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/meilijiaren/meilijiaren/201508/19/443f0f2ad4_thumb_160160.jpg" alt="" /> <span style="color:#; ">高跟鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_%E4%B9%90%E7%A6%8F%E9%9E%8B__1.html"> <img src="images/empty.gif" truesrc="http://img2.paishoes.com/xuanfan/huatian/201503/05/81c9bd57c5_thumb_160160.jpg" alt="" /> <span style="color:#; ">乐福鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0003s0135_1.html"> <img src="images/empty.gif" truesrc="http://img13.paixie.net/josiny/201501/14/151112250_484_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">休闲鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0003s0216_1.html"> <img src="images/empty.gif" truesrc="http://img5.paishoes.com/suotang/mixiu1/201508/24/b26e2cf99f_thumb_160160.jpg" alt="" /> <span style="color:#; ">松糕鞋</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">选购热点</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/shoes/list/3_80______id-1.html"> <img src="images/empty.gif" truesrc="http://img13.paixie.net/josiny/201501/29/151110120_484_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">平底</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0003s0137_1.html"> <img src="images/empty.gif" truesrc="http://img13.paixie.net/josiny/201501/14/151117300_484_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">增高</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0003s0048_1.html"> <img src="images/empty.gif" truesrc="http://img13.paixie.net/josiny/201508/18/153457400_484_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">高跟</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0003s0078_1.html"> <img src="images/empty.gif" truesrc="http://img13.paixie.net/josiny/201502/03/151117280_491_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">坡跟</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_%E5%B0%96%E5%A4%B4__1.html"> <img src="images/empty.gif" truesrc="http://img13.paixie.net/josiny/201502/03/151510360_484_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">尖头</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">品牌推荐</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/daphne/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/1419929515b1d3e5.jpg" alt="" /> <span style="color:#; ">达芙妮</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/josiny/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/1419929526692e3d.jpg" alt="" /> <span style="color:#; ">卓诗尼</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/meilijiaren/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150326/142733824114686f.jpg" alt="" /> <span style="color:#; ">美丽佳人</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/dadong/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150304/1425457151f6e3b7.jpg" alt="" /> <span style="color:#; ">大东</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/juri/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150908/1441682475b57d75.jpg" alt="" /> <span style="color:#; ">巨日</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/exull/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150908/14416825517c74ad.jpg" alt="" /> <span style="color:#; ">依思Q</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <!--二级分类单元- end --> 
+       </div> 
+       <div class="js-con-2" style="display:none;"> 
+        <!--二级分类单元--> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">人气单品</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/shoe-playboy-CX37064-993821.html"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/playboy/playboy/201504/25/b1e7e8b4a2_thumb_160160.jpg" alt="" /> <span style="color:#; ">169元</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoe-mufeng-NP660-1086089.html"> <img src="images/empty.gif" truesrc="http://img2.paishoes.com/mufeng/mufa/201507/25/33d60c59a8_thumb_160160.jpg" alt="" /> <span style="color:#; ">29元</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoe-bideshjia-1212-957761.html"> <img src="images/empty.gif" truesrc="http://img4.paishoes.com/bideshjia/tengchuan/201503/29/813161f59f_thumb_160160.jpg" alt="" /> <span style="color:#; ">99元</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">人气热卖</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/p-m0002_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img5.paishoes.com/serene/serene/201508/11/9a9acb3eb7_thumb_160160.jpg" alt="" /> <span style="color:#; ">新品男鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoes/list/2_159______id-1.html"> <img src="images/empty.gif" truesrc="http://img4.paishoes.com/zero/lingdushangpin/201508/21/6d2172fe49_thumb_160160.jpg" alt="" /> <span style="color:#; ">商务皮鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-__m000200731_1.html#yun"> <img src="images/empty.gif" truesrc="http://img13.paixie.net/fgn/201503/17/E590867_492_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">镂空皮鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0002s0091_1.html"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150408/14284579139e0a57.jpg" alt="" /> <span style="color:#; ">凉鞋清仓</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0002s0119_1.html#url:/shoes/list/2_119______sd-1.html"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/playboy/playboy/201405/11/f3770bf5f3_thumb_160160.jpg" alt="" /> <span style="color:#; ">休闲鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_%E8%B1%86%E8%B1%86%E9%9E%8B_01082_id;1.html#TJ=topleft"> <img src="images/empty.gif" truesrc="http://img13.paixie.net/fgn/201308/21/A338200_477_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">豆豆潮鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0002s0159_1.html#TJ=topleft"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150408/14284574262abb36.jpg" alt="" /> <span style="color:#; ">品质皮鞋</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">休闲鞋</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/p-__m0002s011900674_1.html#yun"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/mulinsen/huanglong/201408/13/ae14755085_thumb_160160.jpg" alt="" /> <span style="color:#e62ee6; font-weight:bolder;">春夏休闲鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-__m0002s011901279_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img2.paishoes.com/dndn/dndn01/201505/23/fe99d1ed60_thumb_160160.jpg" alt="" /> <span style="color:#; ">牛皮面</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-__m0002s01190073100655_1.html#yun"> <img src="images/empty.gif" truesrc="http://img4.paishoes.com/pathfinder/xinhongji/201408/16/f2a9c7763d_thumb_160160.jpg" alt="" /> <span style="color:#; ">系带</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0002s0158_de;1.html#yun"> <img src="images/empty.gif" truesrc="http://img7.paixie.net/warrior/201504/02/WXY-129R_491_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">帆布鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-__m0002s011900772_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/mulinsen/zuyi/201503/03/5286caa8c5_thumb_160160.jpg" alt="" /> <span style="color:#; ">网纱</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">精品皮鞋</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/p-__m0002s015900674_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img13.paixie.net/fgn/201405/15/T493253_492_p_thumb_160160.jpg" alt="" /> <span style="color:#e612e6; font-weight:bolder;">春夏皮鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_%E4%BC%91%E9%97%B2%E7%9A%AE%E9%9E%8B__id;1.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/bezir/bulaze/201501/08/e31f94694a_thumb_160160.jpg" alt="" /> <span style="color:#; ">休闲皮鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-__m0002s015900731_id;1.html"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150408/142846250485f0c0.jpg" alt="" /> <span style="color:#; ">镂空皮鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/list/?keyword=%E5%95%86%E5%8A%A1%E7%9A%AE%E9%9E%8B&amp;price=&amp;size=&amp;style=&amp;brand=&amp;se"> <img src="images/empty.gif" truesrc="http://img13.paixie.net/fgn/201210/17/paixienet-466149-20121017-150319-p_thumb_160160.jpg" alt="" /> <span style="color:#; ">商务皮鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-__m0002s015901443_1.html#yun"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/fgn/huanglong/201312/10/738aab212e_thumb_160160.jpg" alt="" /> <span style="color:#; ">头层牛皮</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-__m0002s015900674_id;1.html"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150408/142845992004453e.jpg" alt="" /> <span style="color:#; ">尖头皮鞋</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">品牌推荐</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/playboy/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150408/14284634306cfade.jpg" alt="" /> <span style="color:#; ">花花公子</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/fgn/new.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150112/14210306019222d1.jpg" alt="" /> <span style="color:#; ">富贵鸟</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/mulinsen/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150112/14210304640c51e7.jpg" alt="" /> <span style="color:#; ">木林森</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/serene/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150112/1421030397d60399.jpg" alt="" /> <span style="color:#; ">西瑞</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/hongqingting/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150908/1441692541d58722.jpg" alt="" /> <span style="color:#; ">红蜻蜓</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/yearcon/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150908/14416926328042e6.jpg" alt="" /> <span style="color:#; ">意尔康</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <!--二级分类单元- end --> 
+       </div> 
+       <div class="js-con-3" style="display:none;"> 
+        <!--二级分类单元--> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">人气单品</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://www.paixie.net/shoe-liwoer-403-1096857.html"> <img src="images/empty.gif" truesrc="http://img2.paishoes.com/liwoer/liwoer/201508/06/325a53e7de_thumb_160160.jpg" alt="" /> <span style="color:#; ">28元</span> </a> </li> 
+          <li> <a href="http://www.paixie.net/shoe-liwoer-tou215b-6603-1087679.html"> <img src="images/empty.gif" truesrc="http://img2.paishoes.com/liwoer/liwoer/201507/28/714a51f8e1_thumb_160160.jpg" alt="" /> <span style="color:#; ">39元</span> </a> </li> 
+          <li> <a href="http://www.paixie.net/shoe-qigirl-7100-1077297.html"> <img src="images/empty.gif" truesrc="http://img2.paishoes.com/qigirl/fanzhelun/201507/15/628fa3e108_thumb_160160.jpg" alt="" /> <span style="color:#; ">68元</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">热卖推荐</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/shoes/list/332_______id-2.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/annstreet/annstreet/201508/14/da603acd2f_thumb_160160.jpg" alt="" /> <span style="color:#; ">2015新品</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoes/list/332_352______id-1.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/baiyiliange/baiyiliange/201508/11/96345aeb16_thumb_160160.jpg" alt="" /> <span style="color:#; ">针织衫</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">尚新美装</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/shoes/list/332_342______id-1.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/annstreet/annstreet/201509/02/6822925da3_thumb_160160.jpg" alt="" /> <span style="color:#; ">外套</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoes/list/332_344______id-1.html"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/beijingse/beijingse/201508/07/4233c06850_thumb_160160.jpg" alt="" /> <span style="color:#; ">风衣</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoes/list/332_352______id-1.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/baiyiliange/baiyiliange/201508/11/9619190316_thumb_160160.jpg" alt="" /> <span style="color:#; ">针织衫</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0332s0341_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/yihuasha/yihuasha/201508/24/a91e997048_thumb_160160.jpg" alt="" /> <span style="color:#; ">衬衫</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoes/list/332_350______id-1.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/yihuasha/yihuasha/201508/24/a91928ce3b_thumb_160160.jpg" alt="" /> <span style="color:#; ">雪纺衫/蕾丝衫</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoes/list/332_359______id-1.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/yihuasha/yihuasha/201508/24/a91a43b15b_thumb_160160.jpg" alt="" /> <span style="color:#; ">T恤</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoes/list/332_349______id-1.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/yihuasha/yihuasha/201508/24/a91e384d43_thumb_160160.jpg" alt="" /> <span style="color:#; ">连衣裙</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoes/list/332_340______id-1.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/yihuasha/yihuasha/201508/24/aaa123fd32_thumb_160160.jpg" alt="" /> <span style="color:#; ">半身裙</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/list/?keyword=&amp;price=&amp;size=&amp;style=377&amp;brand=&amp;sex=&amp;special=&amp;asc=id&amp;main=332"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/baiyiliange/baiyiliange/201505/06/96f13507f9_thumb_160160.jpg" alt="" /> <span style="color:#d929d9; font-weight:bolder;">套装</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_欧根纱__1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150408/14284646019d37be.jpg" alt="" /> <span style="color:#; ">欧根纱</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_%E7%9F%AD%E8%A3%A4%E5%A5%B3__id;1.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/qiaodan/lemai/201505/06/971fa8fea0_thumb_160160.jpg" alt="" /> <span style="color:#; ">短裤</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoes/list/332_356______id-1.html"> <img src="images/empty.gif" truesrc="http://img2.paishoes.com/liwoer/liwoer/201508/19/43548b06f4_thumb_160160.jpg" alt="" /> <span style="color:#; ">牛仔裤</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_%E9%93%85%E7%AC%94_01083_1.html#yun"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/hanyunyibo/hanyunyibo/201503/18/99579c089a_thumb_160160.jpg" alt="" /> <span style="color:#; ">小脚裤</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0332s0347_1.html#url:/shoes/list/332_347______id-1.html"> <img src="images/empty.gif" truesrc="http://img5.paishoes.com/weiwei/weiwei/201503/04/6ad76d17a6_thumb_160160.jpg" alt="" /> <span style="color:#; ">休闲裤</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">热销品牌</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/p-_%E5%88%9D%E8%AF%AD__1.html"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150713/1436753949d141cc.jpg" alt="" /> <span style="color:#; ">初语</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/juezi/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150511/1431334218aebe52.jpg" alt="" /> <span style="color:#; ">爵姿</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/ounixue/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150511/14313340397317ff.jpg" alt="" /> <span style="color:#; ">欧昵雪</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/haoduoyi/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150511/1431334170ab9b52.jpg" alt="" /> <span style="color:#; ">好多衣</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/list/?keyword=&amp;price=&amp;size=&amp;style=&amp;brand=1733&amp;sex=&amp;special=1&amp;asc=id&amp;main="> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150312/1426126491baf325.jpg" alt="" /> <span style="color:#; ">唯唯</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/baiyiliange/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/1419922139b3b705.jpg" alt="" /> <span style="color:#; ">百依恋歌</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <!--二级分类单元- end --> 
+       </div> 
+       <div class="js-con-4" style="display:none;"> 
+        <!--二级分类单元--> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">人气单品</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/shoe-rucishendu-DA247C122-1080587.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/rucishendu/rucishendu/201507/20/cb540e06c2_thumb_160160.jpg" alt="" /> <span style="color:#; ">68元</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoe-ailunboge-707T264025-1091391.html"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/ailunboge/ailunboge/201508/01/c5415a954f_thumb_160160.jpg" alt="" /> <span style="color:#; ">59元</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoe-aikesioumasi-159-1087291.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/aikesioumasi/aikesioumasi/201507/27/5eb07a02ff_thumb_160160.jpg" alt="" /> <span style="color:#; ">59元</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">全部分类</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/shoes/list/265_280______id-1.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/meizhibang/jinyan/201509/02/69441d90ad_thumb_160160.jpg" alt="" /> <span style="color:#; ">卫衣</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoes/list/265_268______id-1.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/keliximeng/yamosi/201507/13/3b519b25a0_thumb_160160.jpg" alt="" /> <span style="color:#; ">风衣</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoes/list/265_267______id-1.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/keliximeng/yamosi/201508/17/1e14d36e7e_thumb_160160.jpg" alt="" /> <span style="color:#; ">衬衫</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0265s0279_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img4.paishoes.com/guuka/guuka/201508/08/5bd0d7e2a9_thumb_160160.jpg" alt="" /> <span style="color:#; ">T恤</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoes/list/_276__,590,,,___polo%E8%A1%AB_id-1.html"> <img src="images/empty.gif" truesrc="http://img2.paishoes.com/biensi/qien/201508/25/c1bc45fa55_thumb_160160.jpg" alt="" /> <span style="color:#; ">POLO衫</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0265s0282_1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150420/14294959360ede8e.jpg" alt="" /> <span style="color:#; ">西装</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0265s0280_1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150420/1429496429d40586.jpg" alt="" /> <span style="color:#; ">卫衣</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0265s0270_1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150420/14294965611801ec.jpg" alt="" /> <span style="color:#; ">夹克</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_男士短裤__1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150420/1429495564c8720e.jpg" alt="" /> <span style="color:#; ">短裤</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0265s0281_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/141991143288db7c.png" alt="" /> <span style="color:#; ">休闲裤</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_七分裤__1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150420/1429495710eb4569.jpg" alt="" /> <span style="color:#; ">七分裤</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0265s0274_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/141991136882f4ed.png" alt="" /> <span style="color:#; ">牛仔裤</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/forbid/p-_%E6%A3%89%E9%BA%BB%E8%A3%A4__1.html"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150420/14294962615e2c71.jpg" alt="" /> <span style="color:#; ">棉麻裤</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_%E6%B2%99%E6%BB%A9_s0281_1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150420/1429496077de0b5f.jpg" alt="" /> <span style="color:#; ">沙滩裤</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">品牌推荐</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/dickies/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150420/1429497235363d14.jpg" alt="" /> <span style="color:#; ">Dickies</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/zhandijipu/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150420/14294971459cb5eb.jpg" alt="" /> <span style="color:#; ">战地吉普</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/taizilong/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150420/142949711063d8f5.jpg" alt="" /> <span style="color:#; ">太子龙</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/guuka/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/141992470400872f.jpg" alt="" /> <span style="color:#; ">古由卡</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/genanx/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/1419924741514f2b.jpg" alt="" /> <span style="color:#; ">格男仕</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/senleisi/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/141992489822bf45.jpg" alt="" /> <span style="color:#; ">森雷司</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <!--二级分类单元- end --> 
+       </div> 
+       <div class="js-con-5" style="display:none;"> 
+        <!--二级分类单元--> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">超值单品</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/shoe-mufeng-1515-1066913.html"> <img src="images/empty.gif" truesrc="http://img2.paishoes.com/mufeng/mufa/201507/03/62756bcbab_thumb_160160.jpg" alt="" /> <span style="color:#; ">79元</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">热卖推荐</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/list/?keyword=%E6%88%B7%E5%A4%96&amp;price=&amp;size=&amp;style=&amp;brand=&amp;sex=&amp;special=&amp;asc=id"> <img src="images/empty.gif" truesrc="http://img12.paixie.net/361sport/201505/06/571523312_491_p_thumb_160160.jpg" alt="" /> <span style="color:#e617e6; ">户外新品</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_%E5%BE%92%E6%AD%A5%E9%9E%8B__1.html#yun"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/resoon/bainianqiang/201405/18/8211a15b8d_thumb_160160.jpg" alt="" /> <span style="color:#; ">徒步鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0006s0011_1.html#yun"> <img src="images/empty.gif" truesrc="http://img7.paixie.net/qiaodan/201503/13/XM2541028_496_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">沙滩鞋清仓</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0006s0049_1.html#yun"> <img src="images/empty.gif" truesrc="http://img5.paishoes.com/longji/huangshi/201504/04/f45c467b80_thumb_160160.jpg" alt="" /> <span style="color:#; ">登山鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0006s0046_1.html#yun"> <img src="images/empty.gif" truesrc="http://img12.paixie.net/361sport/201501/20/571513304_481_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">户外休闲鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_%E6%88%B7%E5%A4%96T%E6%81%A4__1.html#yun"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/resoon/bainianqiang/201405/23/ed387486e2_thumb_160160.jpg" alt="" /> <span style="color:#; ">户外T恤清仓</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0290s0303_sd;1.html#yun"> <img src="images/empty.gif" truesrc="http://img5.paishoes.com/telent/telent/201409/17/93b8f699f0_thumb_160160.jpg" alt="" /> <span style="color:#; ">皮肤衣</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0290s0309_1.html#yun"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/laynos/leiluosi/201503/19/a8584953eb_thumb_160160.jpg" alt="" /> <span style="color:#; ">冲锋衣</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0217_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/tantuozhe/tantuozhe01/201504/28/f45f5724aa_thumb_160160.jpg" alt="" /> <span style="color:#; ">户外配件</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">户外鞋</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/list/?keyword=&amp;price=&amp;size=&amp;style=49&amp;brand=&amp;sex=&amp;special=&amp;asc=id&amp;main=6"> <img src="images/empty.gif" truesrc="http://img5.paishoes.com/qifengluotuo/huangshi/201505/05/889a551b1e_thumb_160160.jpg" alt="" /> <span style="color:#; ">登山新品</span> </a> </li> 
+          <li> <a href="http://www.paixie.net/p-m0006s0046_1.html#yun"> <img src="images/empty.gif" truesrc="http://img12.paixie.net/361sport/201501/20/571513303_473_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">休闲鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_%E5%BE%92%E6%AD%A5%E9%9E%8B__1.html#yun"> <img src="images/empty.gif" truesrc="http://img2.paishoes.com/hi-tec/haitaike/201403/29/669804ba3a_thumb_160160.jpg" alt="" /> <span style="color:#; ">徒步鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-__m0006s004901561_1.html#yun"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/resoon/bainianqiang/201405/18/84ee30711d_thumb_160160.jpg" alt="" /> <span style="color:#; ">越野鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_%E6%BA%AF%E6%BA%AA__1.html#yun"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/tantuozhe/tantuozhe01/201504/28/f24b7143c6_thumb_160160.jpg" alt="" /> <span style="color:#; ">溯溪鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-__m000601581_1.html#yun"> <img src="images/empty.gif" truesrc="http://img5.paishoes.com/huaqiaocamel/huangshi/201505/05/8717b1b895_thumb_160160.jpg" alt="" /> <span style="color:#; ">网面户外鞋</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">户外装备</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/p-_%E6%88%B7%E5%A4%96T%E6%81%A4__1.html#yun"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/resoon/bainianqiang/201405/23/ed39c319d2_thumb_160160.jpg" alt="" /> <span style="color:#; ">户外T恤清仓</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0290s0296_1.html#yun"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/resoon/bainianqiang/201405/23/ed3f158451_thumb_160160.jpg" alt="" /> <span style="color:#; ">户外休闲服</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_%E5%86%B2%E9%94%8B%E8%A1%A3__1.html#yun"> <img src="images/empty.gif" truesrc="http://img4.paishoes.com/agleroc/agleroc/201411/04/82d6d17557_thumb_160160.jpg" alt="" /> <span style="color:#; ">冲锋衣</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0290s0305_1.html#yun"> <img src="images/empty.gif" truesrc="http://img4.paishoes.com/xiweitu/xiweitu/201411/25/42af10bb35_thumb_160160.jpg" alt="" /> <span style="color:#; ">软壳衣</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_%E6%88%B7%E5%A4%96%E8%A3%A4__1.html#yun"> <img src="images/empty.gif" truesrc="http://img4.paishoes.com/tantuozhe/yunbang1/201410/13/b4c43a674e_thumb_160160.jpg" alt="" /> <span style="color:#; ">户外裤</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0290s0323_1.html#yun"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/resoon/bainianqiang/201406/09/509422db45_thumb_160160.jpg" alt="" /> <span style="color:#; ">速干裤</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0217_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img5.paishoes.com/tripolar/tripolar/201508/18/2e4be040ae_thumb_160160.jpg" alt="" /> <span style="color:#; ">户外配件</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <!--二级分类单元- end --> 
+       </div> 
+       <div class="js-con-6" style="display:none;"> 
+        <!--二级分类单元--> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">人气单品</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/shoe-camkids-402905-1035287.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/camkids/camkids01/201505/30/97ef3d32a2_thumb_160160.jpg" alt="" /> <span style="color:#; ">30元</span> </a> </li> 
+          <li> <a href="http://www.paixie.net/shoe-piku-HD001-1117305.html"> <img src="images/empty.gif" truesrc="http://img5.paishoes.com/piku/fuguang/201508/29/10b233805c_thumb_160160.jpg" alt="" /> <span style="color:#; ">39元</span> </a> </li> 
+          <li> <a href="http://www.paixie.net/shoe-jmbear-85319841162-1099763.html"> <img src="images/empty.gif" truesrc="http://img4.paishoes.com/jmbear/jiemi1/201508/11/96db24002a_thumb_160160.jpg" alt="" /> <span style="color:#; ">48元</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">热卖推荐</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/shoes/list/4_36______id-1.html"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/snoopy/yamosi01/201508/21/6e4b29bf56_thumb_160160.jpg" alt="" /> <span style="color:#; ">新品童鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0004s0122_id;1.html#TJ=topleft"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/camkids/camkids01/201506/10/79948d3f7f_thumb_160160.jpg" alt="" /> <span style="color:#; ">凉鞋清仓</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0004s0121_1.html#yun"> <img src="images/empty.gif" truesrc="http://img10.paixie.net/361children/201508/17/K8543008_488_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">运动鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0004s012401083_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/mumuwu/taogou/201507/22/f07e0a8c40_thumb_160160.jpg" alt="" /> <span style="color:#; ">公主鞋</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">童鞋</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/p-m0004s0115_1.html#url:/shoes/list/4_115______id-1.html"> <img src="images/empty.gif" truesrc="http://img2.paishoes.com/duolatu/duolatu/201508/20/5491511f64_thumb_160160.jpg" alt="" /> <span style="color:#; ">学步鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0004s0124_1.html#yun "> <img src="images/empty.gif" truesrc="http://img4.paishoes.com/barbie/taokedao/201406/10/688b2a29bb_thumb_160160.jpg" alt="" /> <span style="color:#; ">童皮鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0004s012401083_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/xiaorenguo/xiaorenguo/201508/14/d84442ed35_thumb_160160.jpg" alt="" /> <span style="color:#; ">公主鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-__m0004s012101495_1.html#yun "> <img src="images/empty.gif" truesrc="http://img2.paishoes.com/duolatu/duolatu/201408/07/3449f6d67e_thumb_160160.jpg" alt="" /> <span style="color:#; ">跑步鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_%E5%84%BF%E7%AB%A5%E9%9E%8B_s0123_1.html#yun"> <img src="images/empty.gif" truesrc="http://img5.paishoes.com/kading/baojin/201409/15/6498583f6a_thumb_160160.jpg" alt="" /> <span style="color:#; ">帆布鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoes/list/______%E5%A9%B4%E5%84%BF%E9%9E%8B_-1.html"> <img src="images/empty.gif" truesrc="http://img2.paishoes.com/duolatu/duolatu/201508/17/195da57d2d_thumb_160160.jpg" alt="" /> <span style="color:#; ">婴儿鞋</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-__m0004s012101486_1.html#yun"> <img src="images/empty.gif" truesrc="http://img4.paishoes.com/beedpan/bidepan/201408/25/aff94eb766_thumb_160160.jpg" alt="" /> <span style="color:#; ">全能鞋</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">儿童服装</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/p-m0386s0387_1.html#yun"> <img src="images/empty.gif" truesrc="http://img5.paishoes.com/mimixiong/huangda/201508/31/446b3dda87_thumb_160160.jpg" alt="" /> <span style="color:#; ">衬衫</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0386s0405_1.html#yun"> <img src="images/empty.gif" truesrc="http://img4.paishoes.com/jmbear/jiemi1/201508/27/ecbd0eca1e_thumb_160160.jpg" alt="" /> <span style="color:#; ">T恤</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoes/list/386_407______id-1.html"> <img src="images/empty.gif" truesrc="http://img4.paishoes.com/jmbear/jiemi1/201411/05/9c03eb1094_thumb_160160.jpg" alt="" /> <span style="color:#; ">卫衣</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0386s0403_1.html#url:/shoes/list/386_403______id-1.html"> <img src="images/empty.gif" truesrc="http://img5.paishoes.com/mimixiong/huangda/201509/05/acd50aeead_thumb_160160.jpg" alt="" /> <span style="color:#; ">美裙</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0386s0406_1.html#yun"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/nanjiren/nanjiren/201410/29/0942ca7963_thumb_160160.jpg" alt="" /> <span style="color:#; ">套装</span> </a> </li> 
+          <li> <a href="http://www.paixie.net/p-m0386s0427_id;1.html"> <img src="images/empty.gif" truesrc="http://img5.paishoes.com/mimixiong/huangda/201508/31/44c297d468_thumb_160160.jpg" alt="" /> <span style="color:#; ">夹克</span> </a> </li> 
+          <li> <a href="http://www.paixie.net/p-m0386s0429_1.html#yun"> <img src="images/empty.gif" truesrc="http://img10.paixie.net/361children/201505/28/K6533115_487_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">背心</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0386s0396_1.html#url:/shoes/list/386_396______id-1.html"> <img src="images/empty.gif" truesrc="http://img10.paixie.net/361children/201504/16/K5516302_483_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">裤子</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/shoes/list/______%E4%BA%B2%E5%AD%90%E8%A3%85_id-1.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/camkids/camkids01/201506/11/9274409b5e_thumb_160160.jpg" alt="" /> <span style="color:#; ">亲子装</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">品牌推荐</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/361children/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150507/143096696885a2b1.jpg" alt="" /> <span style="color:#; ">361度童装</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/list?brands=camkids&amp;special=1&amp;page=1"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150713/14367545942481c0.jpg" alt="" /> <span style="color:#; ">camkids</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/barbie/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150108/14207030808e5522.jpg" alt="" /> <span style="color:#; ">芭比</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/list?brands=duolatu&amp;special=1&amp;page=1"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150713/1436754712834c2b.jpg" alt="" /> <span style="color:#; ">哆啦兔</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_%E8%BF%AA%E5%A3%AB%E5%B0%BC__1.html"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150713/1436754452404b8e.jpg" alt="" /> <span style="color:#; ">迪士尼</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/list?brands=snoopy&amp;special=1&amp;page=1"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150713/1436754427bb7f60.jpg" alt="" /> <span style="color:#; ">史努比</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <!--二级分类单元- end --> 
+       </div> 
+       <div class="js-con-7" style="display:none;"> 
+        <!--二级分类单元--> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">所有分类</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/p-_%E7%9A%AE%E5%B8%A6__1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/14199227051eabb6.png" alt="" /> <span style="color:#; ">皮带</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0459s0471_1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/141992792119afb3.jpg" alt="" /> <span style="color:#; ">文胸</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0459s0467_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/1419927933de738a.jpg" alt="" /> <span style="color:#; ">内裤</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/temai/5719.html#yun"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/1419927946a5e9bf.jpg" alt="" /> <span style="color:#; ">丝袜</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <!--二级分类单元- end --> 
+       </div> 
+       <div class="js-con-8" style="display:none;"> 
+        <!--二级分类单元--> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">女包</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/p-__m017710651_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img2.paishoes.com/zuomu/zuomu/201508/14/d94c9d62cf_thumb_160160.jpg" alt="" /> <span style="color:#; ">秋上新</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/temai/5109.html#yun"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/omto/moto/201504/30/19644bd5d7_thumb_160160.jpg" alt="" /> <span style="color:#; ">单肩包</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0217s022801083_1.html#url:/shoes/list/217_228__,591,,,____sd-1.html"> <img src="images/empty.gif" truesrc="http://img8.paixie.net/li-ning/201407/17/ABSJ224-1_487_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">双肩包</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/temai/5111.html#yun"> <img src="images/empty.gif" truesrc="http://img4.paishoes.com/qigege/lafeng/201409/24/280ed5a5e1_thumb_160160.jpg" alt="" /> <span style="color:#; ">手提包</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0177s0206_1.html#yun"> <img src="images/empty.gif" truesrc="http://img11.paixie.net/anhao/201501/13/WG303_495_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">旅行箱</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_%E5%A5%B3+%E9%92%B1%E5%8C%85__id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img2.paishoes.com/niuzhilan/niuzhilan/201505/06/97cb256dfb_thumb_160160.jpg" alt="" /> <span style="color:#; ">钱包</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">男包</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/p-__m017710417_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/danjue/danjue/201504/14/c702525640_thumb_160160.jpg" alt="" /> <span style="color:#; ">新品</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-__m0177s020510417_1.html#yun"> <img src="images/empty.gif" truesrc="http://img2.paishoes.com/laorentou/laorentou01/201412/07/4398002215_thumb_160160.jpg" alt="" /> <span style="color:#; ">商务包</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0217s0236_1.html#url:/shoes/list/217_236______sd-1.html"> <img src="images/empty.gif" truesrc="http://img4.paishoes.com/tantuozhe/tulu/201412/16/f0ebf4b94e_thumb_160160.jpg" alt="" /> <span style="color:#; ">腰包</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0217s022801082_1.html#yun"> <img src="images/empty.gif" truesrc="http://img8.paixie.net/li-ning/201408/08/ABSJ023-1_491_p_thumb_160160.jpg" alt="" /> <span style="color:#; ">双肩包</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0177s0206_1.html#yun"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/danjue/danjue/201504/22/704bfb5550_thumb_160160.jpg" alt="" /> <span style="color:#; ">旅行箱</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_%E7%94%B7+%E9%92%B1%E5%8C%85__re;1.html#yun"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/omto/moto/201503/18/95d50c1663_thumb_160160.jpg" alt="" /> <span style="color:#; ">钱包</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">家纺</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/p-m0511_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/guangchen/guangchen/201505/06/9814fdd661_thumb_160160.jpg" alt="" /> <span style="color:#; ">夏上新</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-_%E5%A4%8F%E5%87%89%E8%A2%AB__1.html#yun"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/guangchen/guangchen/201504/22/700dd8b4b2_thumb_160160.jpg" alt="" /> <span style="color:#; ">夏凉被</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0511s0755_1.html#yun"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/jieliya/jieliya/201410/16/f279416d59_thumb_160160.jpg" alt="" /> <span style="color:#; ">毛巾/面巾</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0511s2375_1.html#url:/shoes/list/511_2375______sd-1.html"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/guangchen/guangchen/201504/14/cf409c3afc_thumb_160160.jpg" alt="" /> <span style="color:#; ">凉席</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0511s0533_1.html#yun"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/guangchen/guangchen/201504/02/cd6fc74542_thumb_160160.jpg" alt="" /> <span style="color:#; ">床单</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0511s0523_1.html#yun"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/guangchen/guangchen/201505/06/9819e4614c_thumb_160160.jpg" alt="" /> <span style="color:#; ">床上多件套</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/forbid/p-_%E6%B5%B4%E5%B7%BE__1.html"> <img src="images/empty.gif" truesrc="http://img1.paishoes.com/jieliya/jieliya/201409/25/3739da6e84_thumb_160160.jpg" alt="" /> <span style="color:#; ">浴巾</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-m0511s0559_id;1.html#yun"> <img src="images/empty.gif" truesrc="http://img3.paishoes.com/guangchen/guangchen/201505/04/7052de4ed4_thumb_160160.jpg" alt="" /> <span style="color:#; ">蚊帐/床幔</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">热销品类</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/p-m0511_1.html"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/141991095171111e.png" alt="" /> <span style="color:#; ">时尚家纺</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-__m017710651_1.html"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/1419927466aac601.jpg" alt="" /> <span style="color:#; ">女包</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/p-__m017710417_id;1.html"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/141992752660c5c2.jpg" alt="" /> <span style="color:#; ">男包</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <div class="p-two-title"> 
+         <p style="color:#; ">品牌推荐</p> 
+         <ul class="p-three-title"> 
+          <li> <a href="http://m.paixie.net/xixigongzhu/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150507/1430967802a5b6e4.jpg" alt="" /> <span style="color:#; ">茜茜公主</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/list?brands=jieliya&amp;special=1&amp;page=1"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20150113/1421117597d44b82.jpg" alt="" /> <span style="color:#; ">洁丽雅</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/nanjiren/"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/14199215255f031b.jpg" alt="" /> <span style="color:#; ">南极人</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/list?brands=guangchen&amp;special=1&amp;page=1"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/1419921500cc20e1.jpg" alt="" /> <span style="color:#; ">广晨</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/list?brands=niuzhilan&amp;special=1&amp;page=1"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/1419921550ec764f.jpg" alt="" /> <span style="color:#; ">纽芝兰</span> </a> </li> 
+          <li> <a href="http://m.paixie.net/list?brands=qigege&amp;special=1&amp;page=1"> <img src="images/empty.gif" truesrc="http://img-cdn2.paixie.net/newspic/20141230/1419921695fd4749.jpg" alt="" /> <span style="color:#; ">柒格格</span> </a> </li> 
+          <div class="clearboth"></div> 
+         </ul> 
+        </div> 
+        <!--二级分类单元- end --> 
+       </div> 
+       <!--分类- end --> 
+      </div> 
+      <div class="clearboth"></div> 
+     </div> 
+    </div> 
+    <!--content-end--> 
+   </div> 
+   <div class="com-footer-area" id="js-com-footer-area"> 
+    <span class="top"></span> 
+    <div class="footer"> 
+     <div class="nav"> 
+      <a class="ellipsis" rel="nofollow" href="http://m.paixie.net/member/" title="个人中心"><span>416148489</span></a> | 
+      <a rel="nofollow" href="http://m.paixie.netlogin.html?act=logout" title="退出">退出</a> | 
+      <a rel="nofollow" href="http://m.paixie.netfeed.html" title="用户反馈">用户反馈</a> | 
+      <a rel="nofollow" href="http://m.paixie.net/help/app.html" title="客户端">客户端</a> 
+     </div> 
+     <div class="copy">
+      &copy;2007-2015 
+      <a href="http://m.paixie.net/" style="color:#9ea4b1;">Paixie</a> All Rights Reserved 
+      <br />闽B2-20110084
+     </div> 
+    </div> 
+    <!--
+        <script>
+    if(navigator.userAgent.toLowerCase().indexOf('android')>=0){
+            document.writeln('<div class="appfootpic" style="background-color:#000; "><a href="http://www.paixie.net/?app=android" target="_blank"><img src="images/2-1.png" alt="" /></a></div>');
+    }else if(navigator.userAgent.toLowerCase().indexOf('iphone')>=0){
+            document.writeln('<div class="appfootpic" style="background-color:#000; "><a href="http://www.paixie.net/?app=iphone" target="_blank"><img src="images/2-1.png" alt="" /></a></div>');
+    }
+    </script>
+    --> 
+   </div> 
+  </div> 
+  <script type="text/tcl" id="js-good-template">
+    <a href="<%=data.link;%>">
+	<div class="pxui-box">
+    <div class="img160"><dfn></dfn><img src="images/empty.gif" goodsrc="<%=data.img;%>"/></div>
+    <span class="name"><%=data.name;%></span>
+    <span class="price"><em>￥</em><%=(data.price+'').split('.')[0];%></span>
+    <del class="price">￥<%=(data.oldprice+'').split('.')[0];%></del>
+    <%if(data.tag){%>
+    <img class="tag" src="images/empty.gif" truesrc="<%=data.tag;%>"/>
+    <%}%>
+	</div>
+    </a>
+</script> 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45921315-2', 'paixie.net');
+    ga('send', 'pageview');
+
+</script> 
+  <div style="display:none;"> 
+  </div>  
+  <script type="text/javascript">
+top.ztetbdata = null; 
+</script>  
+  <script src="js/classify.1.1.js"></script>
+ </body>
+</html>
